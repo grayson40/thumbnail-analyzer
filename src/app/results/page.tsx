@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ThumbnailAnalysis from '../components/ThumbnailAnalysis';
 import { AnalysisResult } from '../types';
+import Header from '../components/Header';
 
 export default function Results() {
   const router = useRouter();
@@ -110,42 +111,27 @@ export default function Results() {
     return 'text-red-500';
   };
 
+  const navItems = [
+    { 
+      label: 'Home', 
+      href: '/',
+      onClick: handleBackToHome
+    },
+    { 
+      label: 'Analyze Another', 
+      href: '/',
+      onClick: handleAnalyzeAnother
+    },
+    { 
+      label: 'Contact', 
+      href: '/contact' 
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 flex flex-col">
       {/* Header */}
-      <header className="border-b border-gray-200 bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-4 max-w-6xl flex items-center justify-between">
-          <div className="flex items-center">
-            <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg mr-3 shadow-md">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-gray-800">Thumbnail Analyzer</span>
-          </div>
-          <nav>
-            <ul className="flex space-x-6">
-              <li>
-                <button
-                  onClick={handleBackToHome}
-                  className="text-gray-600 hover:text-primary transition-colors"
-                >
-                  Home
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={handleAnalyzeAnother}
-                  className="text-gray-600 hover:text-primary transition-colors"
-                >
-                  Analyze Another
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Header navItems={navItems} />
 
       <main className="flex-1">
         {isLoading ? (
