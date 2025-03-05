@@ -39,7 +39,7 @@ async function initVisionClient() {
         }
       } 
       // If it's a Base64 encoded JSON (for Vercel deployment)
-      else if (credentialsEnv.includes('eyJ')) {
+      else if (credentialsEnv.includes('ewog')) {
         try {
           console.log('Using Base64 encoded credentials');
           // Decode the Base64 string to get the JSON content
