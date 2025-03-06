@@ -155,7 +155,7 @@ export default function AnalysisDetails({ analysis }: AnalysisDetailsProps) {
                   <div className="space-y-2">
                     {text.detected.map((item, index) => (
                       <div key={index} className="bg-blue-50 text-blue-800 px-3 py-2 rounded-lg text-sm font-medium">
-                        "{item}"
+                        &quot;{item}&quot;
                       </div>
                     ))}
                     <p className="text-sm text-gray-600 mt-2">

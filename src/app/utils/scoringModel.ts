@@ -123,7 +123,7 @@ export function getPerformanceInsights(metrics: {
 }): string[] {
   const insights: string[] = [];
   const findings = getOverallFindings();
-  const thresholds = getThresholds();
+//   const thresholds = getThresholds();
 
   if (metrics.textEntities < findings.textStats.avgTextEntities) {
     insights.push('Text content is below average - consider adding more engaging text');

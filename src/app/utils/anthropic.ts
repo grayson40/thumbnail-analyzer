@@ -3,9 +3,6 @@ import { Anthropic } from '@anthropic-ai/sdk';
 import {
   getOverallFindings,
   getRecommendedColors,
-  checkMetricsThresholds,
-  getPerformanceInsights,
-  getCategoryThresholds
 } from './scoringModel';
 
 const COMPONENT_ICONS = {
@@ -28,12 +25,12 @@ export async function generateRecommendations(analysisResult: AnalysisResult): P
       });
 
       const findings = getOverallFindings();
-      const metrics = checkMetricsThresholds({
-        textEntities: analysisResult.analysis.text.detected.length,
-        colorScore: analysisResult.scores.visual,
-        faceCount: analysisResult.analysis.faces.count,
-        faceCoverage: parseFloat(analysisResult.analysis.faces.prominence) || 0
-      });
+      // const metrics = checkMetricsThresholds({
+      //   textEntities: analysisResult.analysis.text.detected.length,
+      //   colorScore: analysisResult.scores.visual,
+      //   faceCount: analysisResult.analysis.faces.count,
+      //   faceCoverage: parseFloat(analysisResult.analysis.faces.prominence) || 0
+      // });
 
       // Sort components by score to prioritize recommendations
       const componentScores = [

@@ -3,7 +3,7 @@
 import { ImageAnnotatorClient } from '@google-cloud/vision';
 import { promises as fs } from 'fs';
 import path from 'path';
-import { AnalysisResult } from '../types';
+import { AnalysisResult, Recommendation } from '../types';
 
 // Initialize the Vision client
 // Note: This assumes you have set GOOGLE_APPLICATION_CREDENTIALS in your environment
@@ -462,50 +462,46 @@ function generateBasicRecommendations(
   faces: FaceData[], 
   faceProminence: string, 
   textReadability: string
-): string[] {
-  const recommendations: string[] = [];
-  
-  // Text recommendations based on successful YouTube thumbnails
+): Recommendation[] {
+  const recommendations: Recommendation[] = [];
+
+  console.log('generateBasicRecommendations', detectedText, dominantColors, contrast, faces, faceProminence, textReadability);
+
+  // Text recommendations
   if (detectedText.length === 0) {
-    recommendations.push('Add 1-3 bold, impactful words that create curiosity or highlight value (e.g., "REVEALED", "SHOCKING", "FREE")');
-  } else if (detectedText.join(' ').length > 50) {
-    recommendations.push('Reduce text to 1-3 key words - successful YouTube thumbnails rarely use more than 5-7 words total');
+    recommendations.push({
+      category: 'text',
+      action: 'Add text to your thumbnail',
+      steps: ['Include 1-2 key phrases', 'Use clear, readable fonts'],
+      impact: { metric: 'CTR', value: 25, unit: '%' },
+      priority: 1,
+      icon: '🔤'
+    });
   }
-  
-  if (textReadability.includes('hard to read')) {
-    recommendations.push('Increase text size and use a bold font with strong outlines or drop shadows for maximum readability');
-  }
-  
+
   // Color recommendations
-  if (contrast === 'Low') {
-    recommendations.push('Use highly contrasting colors like yellow/blue, red/white, or black/neon to make your thumbnail pop in search results');
+  if (dominantColors.length < 3) {
+    recommendations.push({
+      category: 'color',
+      action: 'Enhance color variety',
+      steps: ['Add more contrasting colors', 'Use vibrant, eye-catching hues'],
+      impact: { metric: 'Visual Appeal', value: 2, unit: 'x' },
+      priority: 2,
+      icon: '🎨'
+    });
   }
-  
-  if (dominantColors.length < 2) {
-    recommendations.push('Incorporate a bold, attention-grabbing color (red, yellow, or bright blue) that contrasts with your background');
-  }
-  
+
   // Face recommendations
   if (faces.length === 0) {
-    recommendations.push('Consider adding a close-up of a face with an exaggerated emotional expression (surprise, shock, excitement) to create immediate emotional connection');
-  } else {
-    if (faceProminence.includes('Low')) {
-      recommendations.push('Zoom in on the face to make it take up at least 30% of the thumbnail - close-ups of emotional expressions drive higher CTR');
-    }
-    
-    if (faces[0].expressions.includes('neutral')) {
-      recommendations.push('Exaggerate the facial expression to show strong emotion (surprise, excitement, shock) - neutral expressions perform significantly worse');
-    }
+    recommendations.push({
+      category: 'face',
+      action: 'Include human elements',
+      steps: ['Add faces to create emotional connection', 'Position faces prominently'],
+      impact: { metric: 'Engagement', value: 30, unit: '%' },
+      priority: 2,
+      icon: '😀'
+    });
   }
-  
-  // General recommendations based on successful thumbnails
-  if (recommendations.length < 4) {
-    recommendations.push('Create a clear focal point by using size contrast (make the main subject 2-3x larger) and positioning it in the right two-thirds of the thumbnail');
-    recommendations.push('Position your main subject slightly off-center using the rule of thirds, with faces typically looking toward your text or into the frame');
-    recommendations.push('Add subtle visual cues that imply movement, transformation, or before/after scenarios to increase curiosity');
-    recommendations.push('Ensure your thumbnail stands out at small sizes by testing how it looks when shrunk down to 20% of its original size');
-  }
-  
-  // Limit to 6 recommendations
-  return recommendations.slice(0, 6);
+
+  return recommendations;
 } 

@@ -81,7 +81,7 @@ export default function RecommendationList({ recommendations }: RecommendationLi
         Premium Recommendations
       </h3>
       <p className="text-gray-600 mb-6">
-        Based on our AI-powered analysis, here are actionable recommendations to improve your thumbnail's performance:
+        Based on our AI-powered analysis, here are actionable recommendations to improve your thumbnail&apos;s performance:
       </p>
       <ul className="space-y-4">
         {recommendations.map((recommendation, index) => {

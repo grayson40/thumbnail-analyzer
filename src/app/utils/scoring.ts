@@ -1,11 +1,8 @@
 import { AnalysisResult } from '../types';
 import {
   getScoringWeights,
-  getThresholds,
   getOverallFindings,
   calculateNormalizedScore,
-  checkMetricsThresholds,
-  getPerformanceInsights
 } from './scoringModel';
 
 /**
@@ -94,7 +91,7 @@ export function calculateVisualScore(
 ): number {
   if (!dominantColors || dominantColors.length === 0) return 50; // Default score for no color data
   
-  const weights = getScoringWeights();
+  // const weights = getScoringWeights();
   const findings = getOverallFindings();
   
   // Enhanced color variety scoring with diminishing returns
@@ -199,7 +196,7 @@ export function calculateFaceScore(
   } else {
     // For most thumbnails, 1-2 faces is optimal
     const optimalFaceCount = findings.faceStats.avgFaceCount;
-    if (faceCount <= 2) {
+    if (optimalFaceCount <= 2) {
       faceCountScore = 90 + (faceCount / 2) * 10;
     } else {
       // Diminishing returns for more faces
@@ -304,7 +301,7 @@ export function calculateCompositionScore(
   layoutType?: 'centered' | 'rule-of-thirds' | 'golden-ratio' | 'other',
   clutterFactor?: number
 ): number {
-  const weights = getScoringWeights();
+  // const weights = getScoringWeights();
   
   // Enhanced balance calculation with weighted variance
   const componentScores = [
@@ -435,12 +432,12 @@ export function recalculateScores(analysisResult: AnalysisResult): AnalysisResul
   );
 
   // Get performance insights
-  const insights = getPerformanceInsights({
-    textEntities: analysisResult.analysis.text.detected.length,
-    colorScore: visualScore,
-    faceCount: analysisResult.analysis.faces.count,
-    faceCoverage: parseFloat(analysisResult.analysis.faces.prominence) || 0
-  });
+  // const insights = getPerformanceInsights({
+  //   textEntities: analysisResult.analysis.text.detected.length,
+  //   colorScore: visualScore,
+  //   faceCount: analysisResult.analysis.faces.count,
+  //   faceCoverage: parseFloat(analysisResult.analysis.faces.prominence) || 0
+  // });
 
   // Update the analysis result with new scores and insights
   return {

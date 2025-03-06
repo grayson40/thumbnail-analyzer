@@ -1,127 +1,158 @@
 {
   "overall": {
-    "count": 44,
+    "count": 49,
     "textStats": {
-      "withText": 32,
-      "withTextPercentage": 72.72727272727273,
-      "avgTextEntities": 7.2272727272727275,
-      "avgCharCount": 31.977272727272727
+      "withText": 36,
+      "withTextPercentage": 73.46938775510205,
+      "avgTextEntities": 5.510204081632653,
+      "avgCharCount": 26.6734693877551
     },
     "faceStats": {
-      "withFaces": 36,
-      "withFacesPercentage": 81.81818181818183,
-      "avgFaceCount": 1.25,
+      "withFaces": 38,
+      "withFacesPercentage": 77.55102040816327,
+      "avgFaceCount": 1.0612244897959184,
       "avgFaceCoverage": 0
     },
     "colorStats": {
-      "avgColorScore": 17.977272727272727,
+      "avgColorScore": 17.122448979591837,
       "mostCommonColorRanges": [
         {
           "range": "black",
-          "count": 26,
-          "percentage": 59.09090909090909
+          "count": 27,
+          "percentage": 55.10204081632652
         },
         {
           "range": "other",
-          "count": 16,
-          "percentage": 36.36363636363637
+          "count": 20,
+          "percentage": 40.816326530612244
         },
         {
           "range": "red",
           "count": 1,
-          "percentage": 2.272727272727273
+          "percentage": 2.0408163265306123
         },
         {
           "range": "blue",
           "count": 1,
-          "percentage": 2.272727272727273
+          "percentage": 2.0408163265306123
         }
       ]
     },
     "objectStats": {
-      "avgObjectCount": 4.840909090909091,
+      "avgObjectCount": 4.3061224489795915,
       "mostCommonObjects": [
         {
           "name": "Person",
           "count": 110,
-          "percentage": 250
+          "percentage": 224.48979591836732
         },
         {
           "name": "Clothing",
-          "count": 45,
-          "percentage": 102.27272727272727
+          "count": 38,
+          "percentage": 77.55102040816327
         },
         {
           "name": "Top",
-          "count": 24,
-          "percentage": 54.54545454545454
+          "count": 25,
+          "percentage": 51.02040816326531
+        },
+        {
+          "name": "Outerwear",
+          "count": 5,
+          "percentage": 10.204081632653061
         },
         {
           "name": "Hat",
-          "count": 4,
-          "percentage": 9.090909090909092
-        },
-        {
-          "name": "Pants",
-          "count": 4,
-          "percentage": 9.090909090909092
+          "count": 5,
+          "percentage": 10.204081632653061
         },
         {
           "name": "Tie",
           "count": 3,
-          "percentage": 6.8181818181818175
+          "percentage": 6.122448979591836
+        },
+        {
+          "name": "Coat",
+          "count": 3,
+          "percentage": 6.122448979591836
         },
         {
           "name": "Glasses",
           "count": 3,
-          "percentage": 6.8181818181818175
-        },
-        {
-          "name": "Coat",
-          "count": 2,
-          "percentage": 4.545454545454546
-        },
-        {
-          "name": "Lifejacket",
-          "count": 2,
-          "percentage": 4.545454545454546
+          "percentage": 6.122448979591836
         },
         {
           "name": "Necklace",
+          "count": 3,
+          "percentage": 6.122448979591836
+        },
+        {
+          "name": "Pants",
           "count": 2,
-          "percentage": 4.545454545454546
+          "percentage": 4.081632653061225
         }
       ]
     }
   },
   "byCategory": {
     "Gaming": {
-      "count": 2,
+      "count": 5,
       "textStats": {
-        "withText": 2,
-        "withTextPercentage": 100,
-        "avgTextEntities": 22.5,
-        "avgCharCount": 107
+        "withText": 4,
+        "withTextPercentage": 80,
+        "avgTextEntities": 8.8,
+        "avgCharCount": 46.6
       },
       "faceStats": {
-        "withFaces": 0,
-        "withFacesPercentage": 0,
-        "avgFaceCount": 0,
+        "withFaces": 1,
+        "withFacesPercentage": 20,
+        "avgFaceCount": 0.2,
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 17.5,
+        "avgColorScore": 16.4,
         "mostCommonColorRanges": [
           {
             "range": "other",
-            "count": 2,
-            "percentage": 100
+            "count": 4,
+            "percentage": 80
+          },
+          {
+            "range": "black",
+            "count": 1,
+            "percentage": 20
           }
         ]
       },
       "objectStats": {
-        "avgObjectCount": 0,
-        "mostCommonObjects": []
+        "avgObjectCount": 1.4,
+        "mostCommonObjects": [
+          {
+            "name": "Person",
+            "count": 3,
+            "percentage": 60
+          },
+          {
+            "name": "Clothing",
+            "count": 1,
+            "percentage": 20
+          },
+          {
+            "name": "Outerwear",
+            "count": 1,
+            "percentage": 20
+          },
+          {
+            "name": "Hat",
+            "count": 1,
+            "percentage": 20
+          },
+          {
+            "name": "Sun hat",
+            "count": 1,
+            "percentage": 20
+          }
+        ]
       }
     },
     "Entertainment": {
@@ -129,47 +160,47 @@
       "textStats": {
         "withText": 9,
         "withTextPercentage": 90,
-        "avgTextEntities": 8.3,
-        "avgCharCount": 35
+        "avgTextEntities": 5.9,
+        "avgCharCount": 25.6
       },
       "faceStats": {
         "withFaces": 9,
         "withFacesPercentage": 90,
-        "avgFaceCount": 1.4,
+        "avgFaceCount": 1.3,
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 15.1,
+        "avgColorScore": 12.7,
         "mostCommonColorRanges": [
           {
             "range": "black",
-            "count": 6,
-            "percentage": 60
+            "count": 5,
+            "percentage": 50
           },
           {
             "range": "other",
-            "count": 4,
-            "percentage": 40
+            "count": 5,
+            "percentage": 50
           }
         ]
       },
       "objectStats": {
-        "avgObjectCount": 5.8,
+        "avgObjectCount": 5.3,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 33,
-            "percentage": 330
+            "count": 29,
+            "percentage": 290
           },
           {
             "name": "Clothing",
-            "count": 15,
-            "percentage": 150
+            "count": 13,
+            "percentage": 130
           },
           {
             "name": "Top",
-            "count": 5,
-            "percentage": 50
+            "count": 6,
+            "percentage": 60
           },
           {
             "name": "Glasses",
@@ -187,7 +218,7 @@
             "percentage": 10
           },
           {
-            "name": "Lifejacket",
+            "name": "Pants",
             "count": 1,
             "percentage": 10
           }
@@ -197,27 +228,27 @@
     "Music": {
       "count": 10,
       "textStats": {
-        "withText": 3,
-        "withTextPercentage": 30,
-        "avgTextEntities": 0.2,
-        "avgCharCount": 4.1
+        "withText": 4,
+        "withTextPercentage": 40,
+        "avgTextEntities": 1.6,
+        "avgCharCount": 11.3
       },
       "faceStats": {
-        "withFaces": 9,
-        "withFacesPercentage": 90,
-        "avgFaceCount": 1.9,
+        "withFaces": 8,
+        "withFacesPercentage": 80,
+        "avgFaceCount": 1.3,
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 19.6,
+        "avgColorScore": 20.8,
         "mostCommonColorRanges": [
           {
-            "range": "black",
+            "range": "other",
             "count": 5,
             "percentage": 50
           },
           {
-            "range": "other",
+            "range": "black",
             "count": 4,
             "percentage": 40
           },
@@ -229,35 +260,30 @@
         ]
       },
       "objectStats": {
-        "avgObjectCount": 5.6,
+        "avgObjectCount": 3.9,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 23,
-            "percentage": 229.99999999999997
+            "count": 18,
+            "percentage": 180
           },
           {
             "name": "Clothing",
-            "count": 13,
-            "percentage": 130
+            "count": 6,
+            "percentage": 60
           },
           {
             "name": "Top",
-            "count": 5,
-            "percentage": 50
+            "count": 4,
+            "percentage": 40
           },
           {
             "name": "Necklace",
-            "count": 2,
-            "percentage": 20
+            "count": 3,
+            "percentage": 30
           },
           {
             "name": "Hat",
-            "count": 2,
-            "percentage": 20
-          },
-          {
-            "name": "Pants",
             "count": 2,
             "percentage": 20
           },
@@ -280,6 +306,11 @@
             "name": "Car",
             "count": 1,
             "percentage": 10
+          },
+          {
+            "name": "Sunglasses",
+            "count": 1,
+            "percentage": 10
           }
         ]
       }
@@ -287,10 +318,10 @@
     "Comedy": {
       "count": 10,
       "textStats": {
-        "withText": 9,
-        "withTextPercentage": 90,
-        "avgTextEntities": 8.3,
-        "avgCharCount": 34.3
+        "withText": 8,
+        "withTextPercentage": 80,
+        "avgTextEntities": 3.5,
+        "avgCharCount": 18.1
       },
       "faceStats": {
         "withFaces": 10,
@@ -299,7 +330,7 @@
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 18.4,
+        "avgColorScore": 17.8,
         "mostCommonColorRanges": [
           {
             "range": "black",
@@ -314,17 +345,17 @@
         ]
       },
       "objectStats": {
-        "avgObjectCount": 4.4,
+        "avgObjectCount": 4.9,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 27,
-            "percentage": 270
+            "count": 30,
+            "percentage": 300
           },
           {
             "name": "Clothing",
-            "count": 9,
-            "percentage": 90
+            "count": 7,
+            "percentage": 70
           },
           {
             "name": "Top",
@@ -333,21 +364,26 @@
           },
           {
             "name": "Tie",
-            "count": 1,
-            "percentage": 10
+            "count": 2,
+            "percentage": 20
           },
           {
             "name": "Coat",
+            "count": 2,
+            "percentage": 20
+          },
+          {
+            "name": "Hat",
+            "count": 2,
+            "percentage": 20
+          },
+          {
+            "name": "Outerwear",
             "count": 1,
             "percentage": 10
           },
           {
-            "name": "Lifejacket",
-            "count": 1,
-            "percentage": 10
-          },
-          {
-            "name": "Pants",
+            "name": "Dress",
             "count": 1,
             "percentage": 10
           }
@@ -355,56 +391,76 @@
       }
     },
     "People & Blogs": {
-      "count": 2,
+      "count": 4,
       "textStats": {
-        "withText": 0,
-        "withTextPercentage": 0,
-        "avgTextEntities": -1,
-        "avgCharCount": 0
+        "withText": 2,
+        "withTextPercentage": 50,
+        "avgTextEntities": 1,
+        "avgCharCount": 9.25
       },
       "faceStats": {
-        "withFaces": 2,
+        "withFaces": 4,
         "withFacesPercentage": 100,
         "avgFaceCount": 1.5,
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 21.5,
+        "avgColorScore": 20.75,
         "mostCommonColorRanges": [
           {
             "range": "black",
-            "count": 2,
-            "percentage": 100
+            "count": 3,
+            "percentage": 75
+          },
+          {
+            "range": "other",
+            "count": 1,
+            "percentage": 25
           }
         ]
       },
       "objectStats": {
-        "avgObjectCount": 6,
+        "avgObjectCount": 6.75,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 7,
-            "percentage": 350
+            "count": 13,
+            "percentage": 325
+          },
+          {
+            "name": "Clothing",
+            "count": 5,
+            "percentage": 125
+          },
+          {
+            "name": "Top",
+            "count": 3,
+            "percentage": 75
           },
           {
             "name": "Furniture",
             "count": 2,
-            "percentage": 100
-          },
-          {
-            "name": "Clothing",
-            "count": 1,
             "percentage": 50
           },
           {
             "name": "Window blind",
             "count": 1,
-            "percentage": 50
+            "percentage": 25
           },
           {
             "name": "Window",
             "count": 1,
-            "percentage": 50
+            "percentage": 25
+          },
+          {
+            "name": "Jacket",
+            "count": 1,
+            "percentage": 25
+          },
+          {
+            "name": "Outerwear",
+            "count": 1,
+            "percentage": 25
           }
         ]
       }
@@ -414,8 +470,8 @@
       "textStats": {
         "withText": 9,
         "withTextPercentage": 90,
-        "avgTextEntities": 10.7,
-        "avgCharCount": 45.9
+        "avgTextEntities": 11.2,
+        "avgCharCount": 48.7
       },
       "faceStats": {
         "withFaces": 6,
@@ -424,17 +480,17 @@
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 18.2,
+        "avgColorScore": 16.1,
         "mostCommonColorRanges": [
           {
             "range": "black",
-            "count": 5,
-            "percentage": 50
+            "count": 6,
+            "percentage": 60
           },
           {
             "range": "other",
-            "count": 4,
-            "percentage": 40
+            "count": 3,
+            "percentage": 30
           },
           {
             "range": "blue",
@@ -444,27 +500,22 @@
         ]
       },
       "objectStats": {
-        "avgObjectCount": 4.3,
+        "avgObjectCount": 3.6,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 20,
-            "percentage": 200
+            "count": 17,
+            "percentage": 170
           },
           {
             "name": "Top",
-            "count": 10,
-            "percentage": 100
+            "count": 8,
+            "percentage": 80
           },
           {
             "name": "Clothing",
-            "count": 7,
-            "percentage": 70
-          },
-          {
-            "name": "Hat",
-            "count": 2,
-            "percentage": 20
+            "count": 6,
+            "percentage": 60
           },
           {
             "name": "Pants",
@@ -478,6 +529,11 @@
           },
           {
             "name": "Footwear",
+            "count": 1,
+            "percentage": 10
+          },
+          {
+            "name": "Outerwear",
             "count": 1,
             "percentage": 10
           },
@@ -492,190 +548,190 @@
   },
   "comparison": {
     "highCTR": {
-      "count": 11,
+      "count": 12,
       "textStats": {
         "withText": 10,
-        "withTextPercentage": 90.9090909090909,
-        "avgTextEntities": 13.909090909090908,
-        "avgCharCount": 56
+        "withTextPercentage": 83.33333333333334,
+        "avgTextEntities": 11.583333333333334,
+        "avgCharCount": 53.5
       },
       "faceStats": {
-        "withFaces": 9,
-        "withFacesPercentage": 81.81818181818183,
-        "avgFaceCount": 1.3636363636363635,
+        "withFaces": 8,
+        "withFacesPercentage": 66.66666666666666,
+        "avgFaceCount": 0.75,
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 17.272727272727273,
+        "avgColorScore": 15.583333333333334,
         "mostCommonColorRanges": [
           {
             "range": "black",
             "count": 7,
-            "percentage": 63.63636363636363
+            "percentage": 58.333333333333336
           },
           {
             "range": "other",
-            "count": 4,
-            "percentage": 36.36363636363637
+            "count": 5,
+            "percentage": 41.66666666666667
           }
         ]
       },
       "objectStats": {
-        "avgObjectCount": 4.545454545454546,
+        "avgObjectCount": 3.5833333333333335,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 24,
-            "percentage": 218.18181818181816
+            "count": 21,
+            "percentage": 175
           },
           {
             "name": "Clothing",
-            "count": 13,
-            "percentage": 118.18181818181819
+            "count": 7,
+            "percentage": 58.333333333333336
           },
           {
             "name": "Top",
             "count": 5,
-            "percentage": 45.45454545454545
-          },
-          {
-            "name": "Lifejacket",
-            "count": 2,
-            "percentage": 18.181818181818183
-          },
-          {
-            "name": "Tableware",
-            "count": 1,
-            "percentage": 9.090909090909092
-          },
-          {
-            "name": "Shirt",
-            "count": 1,
-            "percentage": 9.090909090909092
-          },
-          {
-            "name": "Tie",
-            "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 41.66666666666667
           },
           {
             "name": "Pants",
+            "count": 2,
+            "percentage": 16.666666666666664
+          },
+          {
+            "name": "Necklace",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
+          },
+          {
+            "name": "Outerwear",
+            "count": 1,
+            "percentage": 8.333333333333332
           },
           {
             "name": "Shoe",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
           },
           {
             "name": "Footwear",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
+          },
+          {
+            "name": "Hat",
+            "count": 1,
+            "percentage": 8.333333333333332
+          },
+          {
+            "name": "Sun hat",
+            "count": 1,
+            "percentage": 8.333333333333332
           }
         ]
       }
     },
     "lowCTR": {
-      "count": 11,
+      "count": 12,
       "textStats": {
-        "withText": 8,
-        "withTextPercentage": 72.72727272727273,
-        "avgTextEntities": 3.909090909090909,
-        "avgCharCount": 21.09090909090909
+        "withText": 11,
+        "withTextPercentage": 91.66666666666666,
+        "avgTextEntities": 4.083333333333333,
+        "avgCharCount": 20.916666666666668
       },
       "faceStats": {
-        "withFaces": 10,
-        "withFacesPercentage": 90.9090909090909,
-        "avgFaceCount": 1.9090909090909092,
+        "withFaces": 11,
+        "withFacesPercentage": 91.66666666666666,
+        "avgFaceCount": 1.8333333333333333,
         "avgFaceCoverage": 0
       },
       "colorStats": {
-        "avgColorScore": 18,
+        "avgColorScore": 15.583333333333334,
         "mostCommonColorRanges": [
           {
             "range": "black",
-            "count": 7,
-            "percentage": 63.63636363636363
+            "count": 6,
+            "percentage": 50
           },
           {
             "range": "other",
-            "count": 3,
-            "percentage": 27.27272727272727
+            "count": 5,
+            "percentage": 41.66666666666667
           },
           {
             "range": "blue",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
           }
         ]
       },
       "objectStats": {
-        "avgObjectCount": 6.363636363636363,
+        "avgObjectCount": 6.75,
         "mostCommonObjects": [
           {
             "name": "Person",
-            "count": 34,
-            "percentage": 309.09090909090907
+            "count": 38,
+            "percentage": 316.66666666666663
           },
           {
             "name": "Top",
-            "count": 14,
-            "percentage": 127.27272727272727
+            "count": 16,
+            "percentage": 133.33333333333331
           },
           {
             "name": "Clothing",
-            "count": 11,
-            "percentage": 100
+            "count": 14,
+            "percentage": 116.66666666666667
           },
           {
             "name": "Hat",
+            "count": 3,
+            "percentage": 25
+          },
+          {
+            "name": "Outerwear",
             "count": 2,
-            "percentage": 18.181818181818183
+            "percentage": 16.666666666666664
           },
           {
             "name": "Tie",
             "count": 2,
-            "percentage": 18.181818181818183
+            "percentage": 16.666666666666664
           },
           {
             "name": "Coat",
             "count": 2,
-            "percentage": 18.181818181818183
-          },
-          {
-            "name": "Pants",
-            "count": 2,
-            "percentage": 18.181818181818183
+            "percentage": 16.666666666666664
           },
           {
             "name": "Necklace",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
           },
           {
-            "name": "Outerwear",
+            "name": "Jacket",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
           },
           {
-            "name": "Picture frame",
+            "name": "Dress",
             "count": 1,
-            "percentage": 9.090909090909092
+            "percentage": 8.333333333333332
           }
         ]
       }
     },
     "differences": {
       "textPresence": {
-        "difference": 18.181818181818173,
-        "highCTR": 90.9090909090909,
-        "lowCTR": 72.72727272727273
+        "difference": -8.333333333333314,
+        "highCTR": 83.33333333333334,
+        "lowCTR": 91.66666666666666
       },
       "facePresence": {
-        "difference": -9.09090909090908,
-        "highCTR": 81.81818181818183,
-        "lowCTR": 90.9090909090909
+        "difference": -25,
+        "highCTR": 66.66666666666666,
+        "lowCTR": 91.66666666666666
       },
       "faceCoverage": {
         "difference": 0,
@@ -683,19 +739,19 @@
         "lowCTR": 0
       },
       "colorScore": {
-        "difference": -0.7272727272727266,
-        "highCTR": 17.272727272727273,
-        "lowCTR": 18
+        "difference": 0,
+        "highCTR": 15.583333333333334,
+        "lowCTR": 15.583333333333334
       },
       "textEntities": {
-        "difference": 10,
-        "highCTR": 13.909090909090908,
-        "lowCTR": 3.909090909090909
+        "difference": 7.500000000000001,
+        "highCTR": 11.583333333333334,
+        "lowCTR": 4.083333333333333
       },
       "objectCount": {
-        "difference": -1.8181818181818175,
-        "highCTR": 4.545454545454546,
-        "lowCTR": 6.363636363636363
+        "difference": -3.1666666666666665,
+        "highCTR": 3.5833333333333335,
+        "lowCTR": 6.75
       }
     }
   }

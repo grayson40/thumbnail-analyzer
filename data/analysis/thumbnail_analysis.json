@@ -1,15 +1,404 @@
 [
   {
+    "id": "TTSlo1zf90c",
+    "title": "Can you escape Finx!? | Brawl Stars Animation",
+    "channelTitle": "Brawl Stars",
+    "categoryId": "20",
+    "publishedAt": "2025-03-06T09:05:33Z",
+    "viewCount": 1732149,
+    "likeCount": 104430,
+    "commentCount": 4358,
+    "thumbnailUrl": "https://i.ytimg.com/vi/TTSlo1zf90c/hqdefault.jpg",
+    "duration": "PT1M37S",
+    "ctr": "6.28",
+    "analysis": {
+      "text": "",
+      "textEntities": -1,
+      "textCharCount": 0,
+      "hasText": false,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 230,
+            "green": 180,
+            "blue": 130
+          },
+          "score": 0.2063577026128769,
+          "pixelFraction": 0.03756093606352806,
+          "hex": "#e6b482"
+        },
+        {
+          "color": {
+            "red": 160,
+            "green": 109,
+            "blue": 63
+          },
+          "score": 0.10968533903360367,
+          "pixelFraction": 0.04771038144826889,
+          "hex": "#a06d3f"
+        },
+        {
+          "color": {
+            "red": 113,
+            "green": 70,
+            "blue": 85
+          },
+          "score": 0.0328998900949955,
+          "pixelFraction": 0.019819388166069984,
+          "hex": "#714655"
+        },
+        {
+          "color": {
+            "red": 42,
+            "green": 13,
+            "blue": 20
+          },
+          "score": 0.020516743883490562,
+          "pixelFraction": 0.05226564407348633,
+          "hex": "#2a0d14"
+        },
+        {
+          "color": {
+            "red": 73,
+            "green": 45,
+            "blue": 77
+          },
+          "score": 0.013197570107877254,
+          "pixelFraction": 0.029649164527654648,
+          "hex": "#492d4d"
+        }
+      ],
+      "colorScore": 13,
+      "faceCount": 0,
+      "hasFace": false,
+      "emotions": [],
+      "faceCoverage": {},
+      "objectCount": 0,
+      "objects": [],
+      "safeSearchRatings": {
+        "adult": "UNLIKELY",
+        "spoof": "UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "UNLIKELY"
+      }
+    },
+    "categoryName": "Gaming"
+  },
+  {
+    "id": "ptp5suRDdQQ",
+    "title": "AMD, I Could Kiss You - 9070 and 9070 XT Review",
+    "channelTitle": "Linus Tech Tips",
+    "categoryId": "28",
+    "publishedAt": "2025-03-05T14:00:48Z",
+    "viewCount": 1886111,
+    "likeCount": 82057,
+    "commentCount": 5952,
+    "thumbnailUrl": "https://i.ytimg.com/vi/ptp5suRDdQQ/hqdefault.jpg",
+    "duration": "PT19M23S",
+    "ctr": "4.67",
+    "analysis": {
+      "text": "9070 XT",
+      "textEntities": 2,
+      "textCharCount": 7,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 12,
+            "green": 11,
+            "blue": 12
+          },
+          "score": 0.16338682174682617,
+          "pixelFraction": 0.3659394085407257,
+          "hex": "#0c0b0c"
+        },
+        {
+          "color": {
+            "red": 100,
+            "green": 161,
+            "blue": 222
+          },
+          "score": 0.12573005259037018,
+          "pixelFraction": 0.0440342053771019,
+          "hex": "#64a1de"
+        },
+        {
+          "color": {
+            "red": 159,
+            "green": 194,
+            "blue": 224
+          },
+          "score": 0.020998431369662285,
+          "pixelFraction": 0.012147367000579834,
+          "hex": "#9fc2e0"
+        },
+        {
+          "color": {
+            "red": 227,
+            "green": 50,
+            "blue": 97
+          },
+          "score": 0.01552556548267603,
+          "pixelFraction": 0.004155678208917379,
+          "hex": "#e33261"
+        },
+        {
+          "color": {
+            "red": 73,
+            "green": 38,
+            "blue": 23
+          },
+          "score": 0.013742067851126194,
+          "pixelFraction": 0.008471189998090267,
+          "hex": "#492617"
+        }
+      ],
+      "colorScore": 24,
+      "faceCount": 1,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_LIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 3,
+      "objects": [
+        {
+          "name": "Person",
+          "confidence": 0.9460340738296509,
+          "area": 43.04831027984619
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.7225176692008972,
+          "area": 21.208417415618896
+        },
+        {
+          "name": "Outerwear",
+          "confidence": 0.510286808013916,
+          "area": 21.208417415618896
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "POSSIBLE",
+        "medical": "VERY_UNLIKELY",
+        "violence": "VERY_UNLIKELY",
+        "racy": "VERY_UNLIKELY"
+      }
+    },
+    "categoryName": "Gaming"
+  },
+  {
+    "id": "hUmS09eOQmk",
+    "title": "i might do a video for Monster Hunter Wilds",
+    "channelTitle": "videogamedunkey",
+    "categoryId": "20",
+    "publishedAt": "2025-03-04T20:30:08Z",
+    "viewCount": 1168012,
+    "likeCount": 66042,
+    "commentCount": 2686,
+    "thumbnailUrl": "https://i.ytimg.com/vi/hUmS09eOQmk/hqdefault.jpg",
+    "duration": "PT4M30S",
+    "ctr": "5.88",
+    "analysis": {
+      "text": "MONSTER HUNTER\nWILDS",
+      "textEntities": 3,
+      "textCharCount": 20,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 63,
+            "green": 48,
+            "blue": 29
+          },
+          "score": 0.1922893226146698,
+          "pixelFraction": 0.122512586414814,
+          "hex": "#3f301d"
+        },
+        {
+          "color": {
+            "red": 30,
+            "green": 23,
+            "blue": 20
+          },
+          "score": 0.11582162976264954,
+          "pixelFraction": 0.38056421279907227,
+          "hex": "#1e1714"
+        },
+        {
+          "color": {
+            "red": 184,
+            "green": 153,
+            "blue": 93
+          },
+          "score": 0.0723256766796112,
+          "pixelFraction": 0.025333652272820473,
+          "hex": "#b8995d"
+        },
+        {
+          "color": {
+            "red": 95,
+            "green": 79,
+            "blue": 56
+          },
+          "score": 0.10802408307790756,
+          "pixelFraction": 0.07168544828891754,
+          "hex": "#5f4f38"
+        },
+        {
+          "color": {
+            "red": 52,
+            "green": 44,
+            "blue": 39
+          },
+          "score": 0.08470560610294342,
+          "pixelFraction": 0.076560378074646,
+          "hex": "#342c27"
+        }
+      ],
+      "colorScore": 11,
+      "faceCount": 0,
+      "hasFace": false,
+      "emotions": [],
+      "faceCoverage": {},
+      "objectCount": 0,
+      "objects": [],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "VERY_UNLIKELY"
+      }
+    },
+    "categoryName": "Gaming"
+  },
+  {
+    "id": "Kkt5tBHyzI8",
+    "title": "Clone Rumble Trailer | Marvel Rivals",
+    "channelTitle": "Marvel Rivals",
+    "categoryId": "20",
+    "publishedAt": "2025-03-04T16:00:29Z",
+    "viewCount": 1020460,
+    "likeCount": 60420,
+    "commentCount": 4291,
+    "thumbnailUrl": "https://i.ytimg.com/vi/Kkt5tBHyzI8/hqdefault.jpg",
+    "duration": "PT1M16S",
+    "ctr": "6.34",
+    "analysis": {
+      "text": "RIVALS\n*COMING MARCH 7, 2025 *\nLET'S GET READY TO\nCLONE\nRUMBLE\nJOURNEY ON GALACTA'S COSMIC ADVENTURE\nTO CLAIM A FREE BLACK WIDOW COSTUME\nBLACK VID\nDEL",
+      "textEntities": 29,
+      "textCharCount": 150,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 216,
+            "green": 191,
+            "blue": 153
+          },
+          "score": 0.2359684705734253,
+          "pixelFraction": 0.07600095868110657,
+          "hex": "#d8bf99"
+        },
+        {
+          "color": {
+            "red": 173,
+            "green": 89,
+            "blue": 61
+          },
+          "score": 0.1383117139339447,
+          "pixelFraction": 0.021737392991781235,
+          "hex": "#ad593d"
+        },
+        {
+          "color": {
+            "red": 88,
+            "green": 83,
+            "blue": 85
+          },
+          "score": 0.004879404325038195,
+          "pixelFraction": 0.016942379996180534,
+          "hex": "#585355"
+        },
+        {
+          "color": {
+            "red": 149,
+            "green": 67,
+            "blue": 40
+          },
+          "score": 0.08848252892494202,
+          "pixelFraction": 0.013186286203563213,
+          "hex": "#954328"
+        },
+        {
+          "color": {
+            "red": 160,
+            "green": 102,
+            "blue": 69
+          },
+          "score": 0.07116392999887466,
+          "pixelFraction": 0.022136976942420006,
+          "hex": "#a06645"
+        }
+      ],
+      "colorScore": 14,
+      "faceCount": 0,
+      "hasFace": false,
+      "emotions": [],
+      "faceCoverage": {},
+      "objectCount": 4,
+      "objects": [
+        {
+          "name": "Person",
+          "confidence": 0.8039915561676025,
+          "area": 21.373653411865234
+        },
+        {
+          "name": "Hat",
+          "confidence": 0.645691454410553,
+          "area": 4.123687744140625
+        },
+        {
+          "name": "Sun hat",
+          "confidence": 0.5872916579246521,
+          "area": 4.123687744140625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.5137667059898376,
+          "area": 21.373653411865234
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "VERY_UNLIKELY"
+      }
+    },
+    "categoryName": "Gaming"
+  },
+  {
     "id": "pc796cUTWRA",
     "title": "We Opened The WORST Grocery Stores Ever",
     "channelTitle": "SMii7Y",
     "categoryId": "20",
     "publishedAt": "2025-03-03T20:15:04Z",
-    "viewCount": 1245471,
-    "likeCount": 59665,
-    "commentCount": 1602,
+    "viewCount": 1354839,
+    "likeCount": 62874,
+    "commentCount": 1383,
     "thumbnailUrl": "https://i.ytimg.com/vi/pc796cUTWRA/hqdefault.jpg",
-    "ctr": "4.92",
+    "duration": "PT39M20S",
+    "ctr": "4.74",
     "analysis": {
       "text": "33333\nCHECKOUT\nProduct\ngan tak\n$1120.00\nTOTAL: $1,120.00",
       "textEntities": 11,
@@ -85,214 +474,17 @@
     "categoryName": "Gaming"
   },
   {
-    "id": "FPeCtUVw6wA",
-    "title": "Pokemon Fans Are Mad At Me",
-    "channelTitle": "penguinz0",
-    "categoryId": "24",
-    "publishedAt": "2025-03-04T02:45:00Z",
-    "viewCount": 1073954,
-    "likeCount": 55882,
-    "commentCount": 10280,
-    "thumbnailUrl": "https://i.ytimg.com/vi/FPeCtUVw6wA/hqdefault.jpg",
-    "ctr": "6.16",
-    "analysis": {
-      "text": "Wild Zones\nAn Extended Look at Pokémon Legends: Z-A!\nThe Official Pokemon YouTube charmel\nthe city has set up \"wild zones.\nSubscribe\n400\n9\nShare\nDownload\nCp\nS",
-      "textEntities": 34,
-      "textCharCount": 158,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 134,
-            "green": 216,
-            "blue": 53
-          },
-          "score": 0.16499744355678558,
-          "pixelFraction": 0.012387117370963097,
-          "hex": "#86d835"
-        },
-        {
-          "color": {
-            "red": 104,
-            "green": 130,
-            "blue": 67
-          },
-          "score": 0.09299641102552414,
-          "pixelFraction": 0.032845839858055115,
-          "hex": "#688243"
-        },
-        {
-          "color": {
-            "red": 194,
-            "green": 246,
-            "blue": 123
-          },
-          "score": 0.07588177174329758,
-          "pixelFraction": 0.007112602703273296,
-          "hex": "#c2f67b"
-        },
-        {
-          "color": {
-            "red": 116,
-            "green": 201,
-            "blue": 224
-          },
-          "score": 0.012344079092144966,
-          "pixelFraction": 0.011348198167979717,
-          "hex": "#74c9e0"
-        },
-        {
-          "color": {
-            "red": 184,
-            "green": 187,
-            "blue": 188
-          },
-          "score": 0.006870095618069172,
-          "pixelFraction": 0.0708862766623497,
-          "hex": "#b8bbbc"
-        }
-      ],
-      "colorScore": 15,
-      "faceCount": 0,
-      "hasFace": false,
-      "emotions": [],
-      "faceCoverage": {},
-      "objectCount": 0,
-      "objects": [],
-      "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "VERY_UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
-        "racy": "VERY_UNLIKELY"
-      }
-    },
-    "categoryName": "Gaming"
-  },
-  {
-    "id": "9D7WeUCxl4Q",
-    "title": "He Presented Hard Evidence but Cops Still Weren’t Convinced - Captured on Ring Doorbell 😂#shorts",
-    "channelTitle": "Cop Humor",
-    "categoryId": "23",
-    "publishedAt": "2025-03-01T18:20:14Z",
-    "viewCount": 18300902,
-    "likeCount": 980838,
-    "commentCount": 8862,
-    "thumbnailUrl": "https://i.ytimg.com/vi/9D7WeUCxl4Q/hqdefault.jpg",
-    "ctr": "5.41",
-    "analysis": {
-      "text": "IS THIS REAL",
-      "textEntities": 3,
-      "textCharCount": 12,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 26,
-            "green": 64,
-            "blue": 37
-          },
-          "score": 0.25011971592903137,
-          "pixelFraction": 0.04635179415345192,
-          "hex": "#1a4025"
-        },
-        {
-          "color": {
-            "red": 165,
-            "green": 143,
-            "blue": 112
-          },
-          "score": 0.10416754335165024,
-          "pixelFraction": 0.0325261726975441,
-          "hex": "#a58f70"
-        },
-        {
-          "color": {
-            "red": 116,
-            "green": 121,
-            "blue": 122
-          },
-          "score": 0.09938599914312363,
-          "pixelFraction": 0.062175337225198746,
-          "hex": "#74797a"
-        },
-        {
-          "color": {
-            "red": 51,
-            "green": 128,
-            "blue": 57
-          },
-          "score": 0.017441296949982643,
-          "pixelFraction": 0.0013585870619863272,
-          "hex": "#338039"
-        },
-        {
-          "color": {
-            "red": 17,
-            "green": 24,
-            "blue": 19
-          },
-          "score": 0.007556757424026728,
-          "pixelFraction": 0.2506992816925049,
-          "hex": "#111813"
-        }
-      ],
-      "colorScore": 18,
-      "faceCount": 1,
-      "hasFace": true,
-      "emotions": [
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        }
-      ],
-      "faceCoverage": {},
-      "objectCount": 4,
-      "objects": [
-        {
-          "name": "Person",
-          "confidence": 0.7405740022659302,
-          "area": 1.111602783203125
-        },
-        {
-          "name": "Person",
-          "confidence": 0.7236126065254211,
-          "area": 0.7415771484375
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.6280036568641663,
-          "area": 0.85296630859375
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.5540590882301331,
-          "area": 0.7415771484375
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "UNLIKELY",
-        "spoof": "VERY_UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
-        "racy": "UNLIKELY"
-      }
-    },
-    "categoryName": "Entertainment"
-  },
-  {
     "id": "NMuwMYTBB1Q",
     "title": "How do avid weapon enthusiasts get their resources?#swat #shortvideo #shorts #viralvideo #short #tv",
     "channelTitle": "Brayden Nostalgia",
     "categoryId": "1",
     "publishedAt": "2025-02-28T18:14:00Z",
-    "viewCount": 9565568,
-    "likeCount": 617235,
-    "commentCount": 1833,
+    "viewCount": 11682856,
+    "likeCount": 720851,
+    "commentCount": 2352,
     "thumbnailUrl": "https://i.ytimg.com/vi/NMuwMYTBB1Q/hqdefault.jpg",
-    "ctr": "6.47",
+    "duration": "PT1M1S",
+    "ctr": "6.19",
     "analysis": {
       "text": "Who'd\nWho'd you deal with?I don't know\nher name.\nt know",
       "textEntities": 14,
@@ -411,11 +603,12 @@
     "channelTitle": "CelebWeekly",
     "categoryId": "22",
     "publishedAt": "2025-02-28T18:00:08Z",
-    "viewCount": 10737279,
-    "likeCount": 572462,
-    "commentCount": 507,
+    "viewCount": 13336750,
+    "likeCount": 710700,
+    "commentCount": 610,
     "thumbnailUrl": "https://i.ytimg.com/vi/yUO2TxF5uh8/hqdefault.jpg",
-    "ctr": "5.34",
+    "duration": "PT23S",
+    "ctr": "5.33",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -529,16 +722,121 @@
     "categoryName": "Entertainment"
   },
   {
+    "id": "OCv8ZZ7EzsI",
+    "title": "That Went South REAL Quick 😅",
+    "channelTitle": "clipsofdantes",
+    "categoryId": "20",
+    "publishedAt": "2025-03-01T19:00:21Z",
+    "viewCount": 12882960,
+    "likeCount": 794622,
+    "commentCount": 2536,
+    "thumbnailUrl": "https://i.ytimg.com/vi/OCv8ZZ7EzsI/hqdefault.jpg",
+    "duration": "PT18S",
+    "ctr": "6.19",
+    "analysis": {
+      "text": "УЕАН",
+      "textEntities": 1,
+      "textCharCount": 4,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 56,
+            "green": 55,
+            "blue": 48
+          },
+          "score": 0.14779910445213318,
+          "pixelFraction": 0.24015024304389954,
+          "hex": "#383730"
+        },
+        {
+          "color": {
+            "red": 9,
+            "green": 28,
+            "blue": 56
+          },
+          "score": 0.12486225366592407,
+          "pixelFraction": 0.0939822569489479,
+          "hex": "#091c38"
+        },
+        {
+          "color": {
+            "red": 24,
+            "green": 81,
+            "blue": 169
+          },
+          "score": 0.0658307671546936,
+          "pixelFraction": 0.021897226572036743,
+          "hex": "#1851a9"
+        },
+        {
+          "color": {
+            "red": 170,
+            "green": 200,
+            "blue": 228
+          },
+          "score": 0.06405719369649887,
+          "pixelFraction": 0.05322464555501938,
+          "hex": "#aac8e4"
+        },
+        {
+          "color": {
+            "red": 111,
+            "green": 162,
+            "blue": 222
+          },
+          "score": 0.04529948532581329,
+          "pixelFraction": 0.021497642621397972,
+          "hex": "#6fa2de"
+        }
+      ],
+      "colorScore": 11,
+      "faceCount": 1,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "VERY_LIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 2,
+      "objects": [
+        {
+          "name": "Person",
+          "confidence": 0.7490641474723816,
+          "area": 14.2822265625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6932867169380188,
+          "area": 14.2822265625
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "UNLIKELY",
+        "spoof": "VERY_LIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "VERY_UNLIKELY",
+        "racy": "POSSIBLE"
+      }
+    },
+    "categoryName": "Entertainment"
+  },
+  {
     "id": "CUpOMSJ1MdU",
     "title": "Elon Musk Cold Open - SNL",
     "channelTitle": "Saturday Night Live",
     "categoryId": "23",
     "publishedAt": "2025-03-02T05:21:11Z",
-    "viewCount": 15112476,
-    "likeCount": 418847,
-    "commentCount": 44668,
+    "viewCount": 14579011,
+    "likeCount": 429314,
+    "commentCount": 45487,
     "thumbnailUrl": "https://i.ytimg.com/vi/CUpOMSJ1MdU/hqdefault.jpg",
-    "ctr": "3.07",
+    "duration": "PT7M46S",
+    "ctr": "3.26",
     "analysis": {
       "text": "SNL 50\nTECI\nJPPO",
       "textEntities": 4,
@@ -684,74 +982,75 @@
     "categoryName": "Entertainment"
   },
   {
-    "id": "OCv8ZZ7EzsI",
-    "title": "That Went South REAL Quick 😅",
-    "channelTitle": "clipsofdantes",
-    "categoryId": "20",
-    "publishedAt": "2025-03-01T19:00:21Z",
-    "viewCount": 10091818,
-    "likeCount": 645951,
-    "commentCount": 1887,
-    "thumbnailUrl": "https://i.ytimg.com/vi/OCv8ZZ7EzsI/hqdefault.jpg",
-    "ctr": "6.42",
+    "id": "xvKLqEiHN-I",
+    "title": "Can Your Parents Legally Ground You?",
+    "channelTitle": "Law By Mike",
+    "categoryId": "27",
+    "publishedAt": "2025-03-04T16:55:38Z",
+    "viewCount": 9301549,
+    "likeCount": 727147,
+    "commentCount": 3451,
+    "thumbnailUrl": "https://i.ytimg.com/vi/xvKLqEiHN-I/hqdefault.jpg",
+    "duration": "PT56S",
+    "ctr": "7.85",
     "analysis": {
-      "text": "УЕАН",
-      "textEntities": 1,
-      "textCharCount": 4,
+      "text": "Court?",
+      "textEntities": 2,
+      "textCharCount": 6,
       "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 56,
-            "green": 55,
-            "blue": 48
-          },
-          "score": 0.14779910445213318,
-          "pixelFraction": 0.24015024304389954,
-          "hex": "#383730"
-        },
-        {
-          "color": {
-            "red": 9,
-            "green": 28,
-            "blue": 56
-          },
-          "score": 0.12486225366592407,
-          "pixelFraction": 0.0939822569489479,
-          "hex": "#091c38"
-        },
-        {
-          "color": {
             "red": 24,
-            "green": 81,
-            "blue": 169
+            "green": 19,
+            "blue": 14
           },
-          "score": 0.0658307671546936,
-          "pixelFraction": 0.021897226572036743,
-          "hex": "#1851a9"
+          "score": 0.22295530140399933,
+          "pixelFraction": 0.33269399404525757,
+          "hex": "#18130e"
         },
         {
           "color": {
-            "red": 170,
-            "green": 200,
-            "blue": 228
+            "red": 51,
+            "green": 39,
+            "blue": 20
           },
-          "score": 0.06405719369649887,
-          "pixelFraction": 0.05322464555501938,
-          "hex": "#aac8e4"
+          "score": 0.1671222299337387,
+          "pixelFraction": 0.1130024790763855,
+          "hex": "#332714"
         },
         {
           "color": {
-            "red": 111,
-            "green": 162,
-            "blue": 222
+            "red": 114,
+            "green": 69,
+            "blue": 18
           },
-          "score": 0.04529948532581329,
-          "pixelFraction": 0.021497642621397972,
-          "hex": "#6fa2de"
+          "score": 0.10561113804578781,
+          "pixelFraction": 0.054343484342098236,
+          "hex": "#724512"
+        },
+        {
+          "color": {
+            "red": 133,
+            "green": 120,
+            "blue": 98
+          },
+          "score": 0.05364913120865822,
+          "pixelFraction": 0.04946855455636978,
+          "hex": "#857862"
+        },
+        {
+          "color": {
+            "red": 149,
+            "green": 104,
+            "blue": 32
+          },
+          "score": 0.01185073982924223,
+          "pixelFraction": 0.014385039918124676,
+          "hex": "#956820"
         }
       ],
-      "colorScore": 11,
+      "colorScore": 15,
       "faceCount": 1,
       "hasFace": true,
       "emotions": [
@@ -763,25 +1062,247 @@
         }
       ],
       "faceCoverage": {},
-      "objectCount": 2,
+      "objectCount": 5,
       "objects": [
         {
           "name": "Person",
-          "confidence": 0.7490641474723816,
-          "area": 14.2822265625
+          "confidence": 0.7667924165725708,
+          "area": 34.21306610107422
         },
         {
           "name": "Person",
-          "confidence": 0.6932867169380188,
-          "area": 14.2822265625
+          "confidence": 0.6513113379478455,
+          "area": 28.022336959838867
+        },
+        {
+          "name": "Top",
+          "confidence": 0.6501533389091492,
+          "area": 18.111038208007812
+        },
+        {
+          "name": "Person",
+          "confidence": 0.5819647312164307,
+          "area": 34.21306610107422
+        },
+        {
+          "name": "Pants",
+          "confidence": 0.5429666638374329,
+          "area": 5.1971435546875
         }
       ],
       "safeSearchRatings": {
         "adult": "UNLIKELY",
-        "spoof": "VERY_LIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
+        "spoof": "UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "UNLIKELY"
+      }
+    },
+    "categoryName": "Entertainment"
+  },
+  {
+    "id": "UHu6cs3ne4g",
+    "title": "Military base active shooter scenario training‼️🤯 #military #army #combat #war",
+    "channelTitle": "War.Culture",
+    "categoryId": "22",
+    "publishedAt": "2025-03-02T21:00:27Z",
+    "viewCount": 5072770,
+    "likeCount": 297401,
+    "commentCount": 2293,
+    "thumbnailUrl": "https://i.ytimg.com/vi/UHu6cs3ne4g/hqdefault.jpg",
+    "duration": "PT59S",
+    "ctr": "5.91",
+    "analysis": {
+      "text": "MILITARY BASE\nACTIVE SHOOTER TRAINING...",
+      "textEntities": 6,
+      "textCharCount": 40,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 162,
+            "green": 98,
+            "blue": 67
+          },
+          "score": 0.19212089478969574,
+          "pixelFraction": 0.013585871085524559,
+          "hex": "#a26243"
+        },
+        {
+          "color": {
+            "red": 83,
+            "green": 42,
+            "blue": 27
+          },
+          "score": 0.07853751629590988,
+          "pixelFraction": 0.03756093606352806,
+          "hex": "#532a1b"
+        },
+        {
+          "color": {
+            "red": 172,
+            "green": 152,
+            "blue": 132
+          },
+          "score": 0.04654930904507637,
+          "pixelFraction": 0.04179653152823448,
+          "hex": "#ac9884"
+        },
+        {
+          "color": {
+            "red": 162,
+            "green": 107,
+            "blue": 85
+          },
+          "score": 0.13485154509544373,
+          "pixelFraction": 0.01550387591123581,
+          "hex": "#a26b55"
+        },
+        {
+          "color": {
+            "red": 135,
+            "green": 75,
+            "blue": 47
+          },
+          "score": 0.08041180670261383,
+          "pixelFraction": 0.005194597411900759,
+          "hex": "#874b2f"
+        }
+      ],
+      "colorScore": 14,
+      "faceCount": 2,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        },
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 2,
+      "objects": [
+        {
+          "name": "Clothing",
+          "confidence": 0.708406388759613,
+          "area": 19.06585693359375
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6385488510131836,
+          "area": 31.919097900390625
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "LIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "UNLIKELY",
         "racy": "POSSIBLE"
+      }
+    },
+    "categoryName": "Entertainment"
+  },
+  {
+    "id": "dfwbXY07llY",
+    "title": "Could you do that? #doglover #dogsoverhumans #familyevents #puppytime",
+    "channelTitle": "WIFI",
+    "categoryId": "15",
+    "publishedAt": "2025-02-25T15:07:10Z",
+    "viewCount": 9339681,
+    "likeCount": 621772,
+    "commentCount": 6199,
+    "thumbnailUrl": "https://i.ytimg.com/vi/dfwbXY07llY/hqdefault.jpg",
+    "duration": "PT10S",
+    "ctr": "6.72",
+    "analysis": {
+      "text": "INSIDE\nGay man saves his dog\nfrom coyote attack!\nINDE",
+      "textEntities": 11,
+      "textCharCount": 53,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 25,
+            "green": 120,
+            "blue": 239
+          },
+          "score": 0.25019580125808716,
+          "pixelFraction": 0.008231439627707005,
+          "hex": "#1978ef"
+        },
+        {
+          "color": {
+            "red": 162,
+            "green": 148,
+            "blue": 129
+          },
+          "score": 0.06853634119033813,
+          "pixelFraction": 0.022136976942420006,
+          "hex": "#a29481"
+        },
+        {
+          "color": {
+            "red": 81,
+            "green": 118,
+            "blue": 177
+          },
+          "score": 0.061505962163209915,
+          "pixelFraction": 0.004155678208917379,
+          "hex": "#5176b1"
+        },
+        {
+          "color": {
+            "red": 131,
+            "green": 121,
+            "blue": 118
+          },
+          "score": 0.045861393213272095,
+          "pixelFraction": 0.031087668612599373,
+          "hex": "#837976"
+        },
+        {
+          "color": {
+            "red": 209,
+            "green": 26,
+            "blue": 85
+          },
+          "score": 0.031487684696912766,
+          "pixelFraction": 0.0013585870619863272,
+          "hex": "#d11a55"
+        }
+      ],
+      "colorScore": 15,
+      "faceCount": 0,
+      "hasFace": false,
+      "emotions": [],
+      "faceCoverage": {},
+      "objectCount": 2,
+      "objects": [
+        {
+          "name": "Clothing",
+          "confidence": 0.710798442363739,
+          "area": 0.98876953125
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6996945738792419,
+          "area": 1.1138916015625
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "VERY_UNLIKELY",
+        "racy": "UNLIKELY"
       }
     },
     "categoryName": "Entertainment"
@@ -792,11 +1313,12 @@
     "channelTitle": "pawndynasty",
     "categoryId": "22",
     "publishedAt": "2025-02-27T17:29:42Z",
-    "viewCount": 15157679,
-    "likeCount": 874606,
-    "commentCount": 3247,
+    "viewCount": 16191812,
+    "likeCount": 944546,
+    "commentCount": 3435,
     "thumbnailUrl": "https://i.ytimg.com/vi/ZP14QDecSjg/hqdefault.jpg",
-    "ctr": "5.79",
+    "duration": "PT52S",
+    "ctr": "5.85",
     "analysis": {
       "text": "GUY TRIES TO SELL A\nWORLD WAR 2 GRANEDE!\n*$1 MILLION?*",
       "textEntities": 16,
@@ -915,197 +1437,78 @@
     "categoryName": "Entertainment"
   },
   {
-    "id": "w2w-rfrwT3Q",
-    "title": "A new kind of robbing the rich to help the poor#movie #shorts",
-    "channelTitle": "arthur95tt3",
-    "categoryId": "22",
-    "publishedAt": "2025-03-01T09:57:22Z",
-    "viewCount": 8817321,
-    "likeCount": 711590,
-    "commentCount": 888,
-    "thumbnailUrl": "https://i.ytimg.com/vi/w2w-rfrwT3Q/hqdefault.jpg",
-    "ctr": "8.08",
-    "analysis": {
-      "text": "You,\nYou, however, are not. Pow!\nPow!",
-      "textEntities": 13,
-      "textCharCount": 37,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 20,
-            "green": 22,
-            "blue": 21
-          },
-          "score": 0.4767421782016754,
-          "pixelFraction": 0.6048909425735474,
-          "hex": "#141615"
-        },
-        {
-          "color": {
-            "red": 143,
-            "green": 155,
-            "blue": 49
-          },
-          "score": 0.01938660256564617,
-          "pixelFraction": 0.003276592353358865,
-          "hex": "#8f9b31"
-        },
-        {
-          "color": {
-            "red": 112,
-            "green": 125,
-            "blue": 59
-          },
-          "score": 0.018157579004764557,
-          "pixelFraction": 0.004954847041517496,
-          "hex": "#707d3b"
-        },
-        {
-          "color": {
-            "red": 244,
-            "green": 247,
-            "blue": 245
-          },
-          "score": 0.00856528989970684,
-          "pixelFraction": 0.011188363656401634,
-          "hex": "#f4f7f5"
-        },
-        {
-          "color": {
-            "red": 223,
-            "green": 231,
-            "blue": 162
-          },
-          "score": 0.0020643901079893112,
-          "pixelFraction": 0.0004795013228431344,
-          "hex": "#dfe7a2"
-        }
-      ],
-      "colorScore": 20,
-      "faceCount": 1,
-      "hasFace": true,
-      "emotions": [
-        {
-          "joy": "UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        }
-      ],
-      "faceCoverage": {},
-      "objectCount": 3,
-      "objects": [
-        {
-          "name": "Person",
-          "confidence": 0.6635717749595642,
-          "area": 22.925567626953125
-        },
-        {
-          "name": "Lifejacket",
-          "confidence": 0.5293026566505432,
-          "area": 14.055633544921875
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.5274856686592102,
-          "area": 14.055633544921875
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "UNLIKELY",
-        "spoof": "VERY_UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "VERY_UNLIKELY"
-      }
-    },
-    "categoryName": "Entertainment"
-  },
-  {
-    "id": "0Meufbpdnck",
-    "title": "Slow it down ☠️",
-    "channelTitle": "Snappy",
+    "id": "Aux9sRxt_Uw",
+    "title": "This Sister Pranked Her Bro in the Most Shocking Way! 😱😂",
+    "channelTitle": "You Won't Cry",
     "categoryId": "24",
-    "publishedAt": "2025-03-04T13:30:23Z",
-    "viewCount": 6469438,
+    "publishedAt": "2025-03-03T19:01:00Z",
+    "viewCount": 5336418,
     "likeCount": 0,
-    "commentCount": 2935,
-    "thumbnailUrl": "https://i.ytimg.com/vi/0Meufbpdnck/hqdefault.jpg",
-    "ctr": "0.05",
+    "commentCount": 39197,
+    "thumbnailUrl": "https://i.ytimg.com/vi/Aux9sRxt_Uw/hqdefault.jpg",
+    "duration": "PT41S",
+    "ctr": "0.73",
     "analysis": {
-      "text": "WAING\nFOR ENTERTA\nBRO GOT FRIENDS\nDorites\nFOR ENTE TAIMENT PURPOSES OY\nSappy 44\nrites\nПАСНО\nCHEESY",
-      "textEntities": 17,
-      "textCharCount": 98,
+      "text": "SOMEHOW",
+      "textEntities": 1,
+      "textCharCount": 7,
       "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 19,
-            "green": 13,
-            "blue": 9
+            "red": 226,
+            "green": 186,
+            "blue": 199
           },
-          "score": 0.3566752076148987,
-          "pixelFraction": 0.5118676424026489,
-          "hex": "#130d09"
+          "score": 0.13165238499641418,
+          "pixelFraction": 0.08399264514446259,
+          "hex": "#e2bac7"
         },
         {
           "color": {
-            "red": 159,
-            "green": 109,
-            "blue": 27
+            "red": 174,
+            "green": 156,
+            "blue": 133
           },
-          "score": 0.07456918060779572,
-          "pixelFraction": 0.01838088408112526,
-          "hex": "#9f6d1b"
+          "score": 0.10234952718019485,
+          "pixelFraction": 0.03524334728717804,
+          "hex": "#ae9c85"
         },
         {
           "color": {
-            "red": 168,
-            "green": 152,
-            "blue": 130
+            "red": 187,
+            "green": 147,
+            "blue": 153
           },
-          "score": 0.022969862446188927,
-          "pixelFraction": 0.01262686774134636,
-          "hex": "#a89882"
+          "score": 0.0879187062382698,
+          "pixelFraction": 0.03348517417907715,
+          "hex": "#bb9399"
         },
         {
           "color": {
-            "red": 110,
-            "green": 25,
-            "blue": 12
+            "red": 204,
+            "green": 194,
+            "blue": 188
           },
-          "score": 0.007816039025783539,
-          "pixelFraction": 0.004155678208917379,
-          "hex": "#6e190c"
+          "score": 0.07476966083049774,
+          "pixelFraction": 0.04387437179684639,
+          "hex": "#ccc2bc"
         },
         {
           "color": {
-            "red": 56,
-            "green": 49,
-            "blue": 44
+            "red": 127,
+            "green": 112,
+            "blue": 93
           },
-          "score": 0.07346975803375244,
-          "pixelFraction": 0.10045552253723145,
-          "hex": "#38312c"
+          "score": 0.0657576248049736,
+          "pixelFraction": 0.021897226572036743,
+          "hex": "#7f705d"
         }
       ],
-      "colorScore": 22,
-      "faceCount": 4,
+      "colorScore": 7,
+      "faceCount": 2,
       "hasFace": true,
       "emotions": [
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        },
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        },
         {
           "joy": "VERY_UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
@@ -1120,161 +1523,40 @@
         }
       ],
       "faceCoverage": {},
-      "objectCount": 10,
+      "objectCount": 5,
       "objects": [
         {
           "name": "Person",
-          "confidence": 0.7501664161682129,
-          "area": 10.65216064453125
+          "confidence": 0.7845665216445923,
+          "area": 12.8875732421875
+        },
+        {
+          "name": "Person",
+          "confidence": 0.7803073525428772,
+          "area": 6.77490234375
         },
         {
           "name": "Clothing",
-          "confidence": 0.7356252670288086,
-          "area": 6.903076171875
+          "confidence": 0.6769726872444153,
+          "area": 5.8319091796875
         },
         {
-          "name": "Person",
-          "confidence": 0.71384596824646,
-          "area": 29.99267578125
-        },
-        {
-          "name": "Person",
-          "confidence": 0.703079104423523,
-          "area": 26.59171801060438
-        },
-        {
-          "name": "Person",
-          "confidence": 0.6839478611946106,
-          "area": 10.65216064453125
+          "name": "Clothing",
+          "confidence": 0.6621268391609192,
+          "area": 4.1179656982421875
         },
         {
           "name": "Top",
-          "confidence": 0.6748735308647156,
-          "area": 6.903076171875
-        },
-        {
-          "name": "Person",
-          "confidence": 0.651301383972168,
-          "area": 26.59171801060438
-        },
-        {
-          "name": "Person",
-          "confidence": 0.649766743183136,
-          "area": 29.99267578125
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.6295977830886841,
-          "area": 10.066986083984375
-        },
-        {
-          "name": "Person",
-          "confidence": 0.6168819665908813,
-          "area": 6.63909912109375
+          "confidence": 0.6117078065872192,
+          "area": 4.1179656982421875
         }
       ],
       "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "POSSIBLE",
-        "medical": "VERY_UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "VERY_UNLIKELY"
-      }
-    },
-    "categoryName": "Entertainment"
-  },
-  {
-    "id": "dfwbXY07llY",
-    "title": "Could you do that? #doglover #dogsoverhumans #familyevents #puppytime",
-    "channelTitle": "WIFI",
-    "categoryId": "15",
-    "publishedAt": "2025-02-25T15:07:10Z",
-    "viewCount": 7977098,
-    "likeCount": 554551,
-    "commentCount": 5446,
-    "thumbnailUrl": "https://i.ytimg.com/vi/dfwbXY07llY/hqdefault.jpg",
-    "ctr": "7.02",
-    "analysis": {
-      "text": "INSIDE\nGay man saves his dog\nfrom coyote attack!\nINDE",
-      "textEntities": 11,
-      "textCharCount": 53,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 25,
-            "green": 120,
-            "blue": 239
-          },
-          "score": 0.25019580125808716,
-          "pixelFraction": 0.008231439627707005,
-          "hex": "#1978ef"
-        },
-        {
-          "color": {
-            "red": 162,
-            "green": 148,
-            "blue": 129
-          },
-          "score": 0.06853634119033813,
-          "pixelFraction": 0.022136976942420006,
-          "hex": "#a29481"
-        },
-        {
-          "color": {
-            "red": 81,
-            "green": 118,
-            "blue": 177
-          },
-          "score": 0.061505962163209915,
-          "pixelFraction": 0.004155678208917379,
-          "hex": "#5176b1"
-        },
-        {
-          "color": {
-            "red": 131,
-            "green": 121,
-            "blue": 118
-          },
-          "score": 0.045861393213272095,
-          "pixelFraction": 0.031087668612599373,
-          "hex": "#837976"
-        },
-        {
-          "color": {
-            "red": 209,
-            "green": 26,
-            "blue": 85
-          },
-          "score": 0.031487684696912766,
-          "pixelFraction": 0.0013585870619863272,
-          "hex": "#d11a55"
-        }
-      ],
-      "colorScore": 15,
-      "faceCount": 0,
-      "hasFace": false,
-      "emotions": [],
-      "faceCoverage": {},
-      "objectCount": 2,
-      "objects": [
-        {
-          "name": "Clothing",
-          "confidence": 0.710798442363739,
-          "area": 0.98876953125
-        },
-        {
-          "name": "Person",
-          "confidence": 0.6996945738792419,
-          "area": 1.1138916015625
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "UNLIKELY",
+        "adult": "POSSIBLE",
+        "spoof": "VERY_LIKELY",
         "medical": "UNLIKELY",
-        "violence": "VERY_UNLIKELY",
-        "racy": "UNLIKELY"
+        "violence": "UNLIKELY",
+        "racy": "POSSIBLE"
       }
     },
     "categoryName": "Entertainment"
@@ -1285,10 +1567,11 @@
     "channelTitle": "FindPotential",
     "categoryId": "24",
     "publishedAt": "2025-02-26T22:56:30Z",
-    "viewCount": 20032022,
-    "likeCount": 1223064,
-    "commentCount": 1771,
+    "viewCount": 20545869,
+    "likeCount": 1253666,
+    "commentCount": 1798,
     "thumbnailUrl": "https://i.ytimg.com/vi/d08ekQIjcJc/hqdefault.jpg",
+    "duration": "PT46S",
     "ctr": "6.11",
     "analysis": {
       "text": "YEAH!\nFOLLOW FOR MORE",
@@ -1418,11 +1701,12 @@
     "channelTitle": "Bhad Bhabie",
     "categoryId": "10",
     "publishedAt": "2025-02-25T05:00:53Z",
-    "viewCount": 10612929,
-    "likeCount": 615089,
-    "commentCount": 38511,
+    "viewCount": 11130703,
+    "likeCount": 628177,
+    "commentCount": 39040,
     "thumbnailUrl": "https://i.ytimg.com/vi/yo7_px4vXYQ/hqdefault.jpg",
-    "ctr": "6.16",
+    "duration": "PT2M7S",
+    "ctr": "5.99",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -1503,11 +1787,12 @@
     "channelTitle": "BigXthaPlug",
     "categoryId": "10",
     "publishedAt": "2025-02-28T18:00:06Z",
-    "viewCount": 1381983,
-    "likeCount": 54035,
-    "commentCount": 2236,
+    "viewCount": 1571444,
+    "likeCount": 59182,
+    "commentCount": 2343,
     "thumbnailUrl": "https://i.ytimg.com/vi/JVDUsaqgSq0/hqdefault.jpg",
-    "ctr": "4.07",
+    "duration": "PT3M5S",
+    "ctr": "3.92",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -1611,11 +1896,12 @@
     "channelTitle": "Fridayy",
     "categoryId": "24",
     "publishedAt": "2025-02-28T17:00:03Z",
-    "viewCount": 2638594,
-    "likeCount": 83043,
-    "commentCount": 6667,
+    "viewCount": 2931832,
+    "likeCount": 91580,
+    "commentCount": 7047,
     "thumbnailUrl": "https://i.ytimg.com/vi/tQg5-6DHxQY/hqdefault.jpg",
-    "ctr": "3.40",
+    "duration": "PT3M53S",
+    "ctr": "3.36",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -1772,11 +2058,12 @@
     "channelTitle": "Tito Double P",
     "categoryId": "10",
     "publishedAt": "2025-02-28T02:02:26Z",
-    "viewCount": 5981241,
-    "likeCount": 125787,
-    "commentCount": 4830,
+    "viewCount": 6923952,
+    "likeCount": 132359,
+    "commentCount": 4911,
     "thumbnailUrl": "https://i.ytimg.com/vi/1yZFLRJ4F0Q/hqdefault.jpg",
-    "ctr": "2.18",
+    "duration": "PT2M53S",
+    "ctr": "1.98",
     "analysis": {
       "text": "TITO DOUBLE P\nMATTOO\nDouble P Record",
       "textEntities": 7,
@@ -1865,16 +2152,114 @@
     "categoryName": "Music"
   },
   {
+    "id": "mGR2M2mBJXU",
+    "title": "Ghost - Satanized (Official Music Video)",
+    "channelTitle": "Ghost",
+    "categoryId": "10",
+    "publishedAt": "2025-03-05T05:00:07Z",
+    "viewCount": 1630677,
+    "likeCount": 115172,
+    "commentCount": 10058,
+    "thumbnailUrl": "https://i.ytimg.com/vi/mGR2M2mBJXU/hqdefault.jpg",
+    "duration": "PT4M7S",
+    "ctr": "7.68",
+    "analysis": {
+      "text": "",
+      "textEntities": -1,
+      "textCharCount": 0,
+      "hasText": false,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 82,
+            "green": 82,
+            "blue": 82
+          },
+          "score": 0.28654909133911133,
+          "pixelFraction": 0.07128586620092392,
+          "hex": "#525252"
+        },
+        {
+          "color": {
+            "red": 23,
+            "green": 23,
+            "blue": 23
+          },
+          "score": 0.28300780057907104,
+          "pixelFraction": 0.6248701214790344,
+          "hex": "#171717"
+        },
+        {
+          "color": {
+            "red": 51,
+            "green": 51,
+            "blue": 51
+          },
+          "score": 0.246947780251503,
+          "pixelFraction": 0.18420842289924622,
+          "hex": "#333333"
+        },
+        {
+          "color": {
+            "red": 117,
+            "green": 117,
+            "blue": 117
+          },
+          "score": 0.09597141295671463,
+          "pixelFraction": 0.048589468002319336,
+          "hex": "#757575"
+        },
+        {
+          "color": {
+            "red": 153,
+            "green": 153,
+            "blue": 153
+          },
+          "score": 0.05496269837021828,
+          "pixelFraction": 0.03508351370692253,
+          "hex": "#999999"
+        }
+      ],
+      "colorScore": 7,
+      "faceCount": 0,
+      "hasFace": false,
+      "emotions": [],
+      "faceCoverage": {},
+      "objectCount": 2,
+      "objects": [
+        {
+          "name": "Person",
+          "confidence": 0.6800409555435181,
+          "area": 42.09442138671875
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.5322381258010864,
+          "area": 20.882415771484375
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "UNLIKELY"
+      }
+    },
+    "categoryName": "Music"
+  },
+  {
     "id": "vONxgCQWZCA",
     "title": "YoungBoy Never Broke Again - 5 Night [Official Video]",
     "channelTitle": "YoungBoy Never Broke Again",
     "categoryId": "10",
     "publishedAt": "2025-02-28T06:32:53Z",
-    "viewCount": 1475524,
-    "likeCount": 91665,
-    "commentCount": 7645,
+    "viewCount": 1616047,
+    "likeCount": 94416,
+    "commentCount": 7762,
     "thumbnailUrl": "https://i.ytimg.com/vi/vONxgCQWZCA/hqdefault.jpg",
-    "ctr": "6.73",
+    "duration": "PT3M16S",
+    "ctr": "6.32",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -1988,11 +2373,12 @@
     "channelTitle": "G Herbo",
     "categoryId": "10",
     "publishedAt": "2025-02-28T00:00:07Z",
-    "viewCount": 1018290,
-    "likeCount": 37533,
-    "commentCount": 1619,
+    "viewCount": 1134581,
+    "likeCount": 39160,
+    "commentCount": 1649,
     "thumbnailUrl": "https://i.ytimg.com/vi/ssOka8C8l4w/hqdefault.jpg",
-    "ctr": "3.84",
+    "duration": "PT3M35S",
+    "ctr": "3.60",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -2086,75 +2472,76 @@
     "categoryName": "Music"
   },
   {
-    "id": "r5VRqWkFpEQ",
-    "title": "LISA - FUTW (Vixi Solo Version) (Official Music Video)",
-    "channelTitle": "LLOUD Official",
+    "id": "egemoVK0IKY",
+    "title": "Doechii - Anxiety (Visualizer)",
+    "channelTitle": "IamdoechiiVEVO",
     "categoryId": "10",
-    "publishedAt": "2025-02-28T05:01:26Z",
-    "viewCount": 16720022,
-    "likeCount": 1275196,
-    "commentCount": 77766,
-    "thumbnailUrl": "https://i.ytimg.com/vi/r5VRqWkFpEQ/hqdefault.jpg",
-    "ctr": "8.09",
+    "publishedAt": "2025-03-05T00:00:27Z",
+    "viewCount": 1652991,
+    "likeCount": 172466,
+    "commentCount": 5614,
+    "thumbnailUrl": "https://i.ytimg.com/vi/egemoVK0IKY/hqdefault.jpg",
+    "duration": "PT4M10S",
+    "ctr": "10.77",
     "analysis": {
-      "text": "",
-      "textEntities": -1,
-      "textCharCount": 0,
-      "hasText": false,
+      "text": "vevo",
+      "textEntities": 1,
+      "textCharCount": 4,
+      "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 147,
-            "green": 117,
-            "blue": 59
+            "red": 25,
+            "green": 25,
+            "blue": 25
           },
-          "score": 0.2376667857170105,
-          "pixelFraction": 0.016942379996180534,
-          "hex": "#93753b"
+          "score": 0.7325024008750916,
+          "pixelFraction": 0.705825924873352,
+          "hex": "#191919"
         },
         {
           "color": {
-            "red": 27,
-            "green": 20,
-            "blue": 17
+            "red": 193,
+            "green": 193,
+            "blue": 193
           },
-          "score": 0.051244549453258514,
-          "pixelFraction": 0.823783278465271,
-          "hex": "#1b1411"
+          "score": 0.008526759222149849,
+          "pixelFraction": 0.00631343387067318,
+          "hex": "#c1c1c1"
         },
         {
           "color": {
-            "red": 66,
-            "green": 49,
-            "blue": 26
+            "red": 44,
+            "green": 44,
+            "blue": 44
           },
-          "score": 0.027023673057556152,
-          "pixelFraction": 0.01726204715669155,
-          "hex": "#42311a"
+          "score": 0.20278464257717133,
+          "pixelFraction": 0.25373610854148865,
+          "hex": "#2c2c2c"
         },
         {
           "color": {
-            "red": 176,
-            "green": 148,
-            "blue": 84
+            "red": 82,
+            "green": 82,
+            "blue": 82
           },
-          "score": 0.16385763883590698,
-          "pixelFraction": 0.008790857158601284,
-          "hex": "#b09454"
+          "score": 0.028497427701950073,
+          "pixelFraction": 0.013426036573946476,
+          "hex": "#525252"
         },
         {
           "color": {
-            "red": 181,
-            "green": 152,
-            "blue": 71
+            "red": 120,
+            "green": 120,
+            "blue": 120
           },
-          "score": 0.1508794128894806,
-          "pixelFraction": 0.005913849454373121,
-          "hex": "#b59847"
+          "score": 0.01512641366571188,
+          "pixelFraction": 0.008471189998090267,
+          "hex": "#787878"
         }
       ],
-      "colorScore": 19,
-      "faceCount": 6,
+      "colorScore": 28,
+      "faceCount": 2,
       "hasFace": true,
       "emotions": [
         {
@@ -2168,19 +2555,100 @@
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
           "surprise": "VERY_UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 1,
+      "objects": [
+        {
+          "name": "Necklace",
+          "confidence": 0.5381744503974915,
+          "area": 5.6396484375
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "POSSIBLE"
+      }
+    },
+    "categoryName": "Music"
+  },
+  {
+    "id": "1a3REFH83WA",
+    "title": "Grupo Marca Registrada x Víctor Valverde - El Mayor de los Ranas [En Vivo]",
+    "channelTitle": "RB Music",
+    "categoryId": "10",
+    "publishedAt": "2025-02-28T00:00:31Z",
+    "viewCount": 3426537,
+    "likeCount": 40355,
+    "commentCount": 576,
+    "thumbnailUrl": "https://i.ytimg.com/vi/1a3REFH83WA/hqdefault.jpg",
+    "duration": "PT2M55S",
+    "ctr": "1.19",
+    "analysis": {
+      "text": "GRUPO MARCA REGISTRADA K VICTOR VALVERDE\nEL MAJOR DE LOS\nRANS\nEN VIVO",
+      "textEntities": 13,
+      "textCharCount": 69,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 36,
+            "green": 94,
+            "blue": 15
+          },
+          "score": 0.181759312748909,
+          "pixelFraction": 0.1130823940038681,
+          "hex": "#245e0f"
         },
         {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
+          "color": {
+            "red": 4,
+            "green": 9,
+            "blue": 5
+          },
+          "score": 0.12662330269813538,
+          "pixelFraction": 0.29241588711738586,
+          "hex": "#040905"
         },
         {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
+          "color": {
+            "red": 23,
+            "green": 52,
+            "blue": 15
+          },
+          "score": 0.10155270248651505,
+          "pixelFraction": 0.0498681366443634,
+          "hex": "#17340f"
         },
+        {
+          "color": {
+            "red": 45,
+            "green": 131,
+            "blue": 10
+          },
+          "score": 0.04646943882107735,
+          "pixelFraction": 0.076560378074646,
+          "hex": "#2d830a"
+        },
+        {
+          "color": {
+            "red": 178,
+            "green": 152,
+            "blue": 95
+          },
+          "score": 0.004969547037035227,
+          "pixelFraction": 0.0039159273728728294,
+          "hex": "#b2985f"
+        }
+      ],
+      "colorScore": 19,
+      "faceCount": 2,
+      "hasFace": true,
+      "emotions": [
         {
           "joy": "VERY_UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
@@ -2198,62 +2666,62 @@
       "objectCount": 10,
       "objects": [
         {
-          "name": "Clothing",
-          "confidence": 0.7867392301559448,
-          "area": 1.28173828125
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.7743952870368958,
-          "area": 1.7578125
+          "name": "Person",
+          "confidence": 0.8644127249717712,
+          "area": 10.153770446777344
         },
         {
           "name": "Person",
-          "confidence": 0.7721974849700928,
-          "area": 9.274959564208984
+          "confidence": 0.7233773469924927,
+          "area": 9.331703186035156
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.6785398125648499,
+          "area": 6.8286895751953125
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.6748027205467224,
+          "area": 6.6844940185546875
         },
         {
           "name": "Person",
-          "confidence": 0.7675231099128723,
-          "area": 9.922027587890625
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.7576239109039307,
-          "area": 1.3217926025390625
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.7536301612854004,
-          "area": 1.8047332763671875
+          "confidence": 0.5965335965156555,
+          "area": 9.331703186035156
         },
         {
           "name": "Top",
-          "confidence": 0.7439775466918945,
-          "area": 1.7578125
+          "confidence": 0.5839885473251343,
+          "area": 6.6844940185546875
+        },
+        {
+          "name": "Top",
+          "confidence": 0.5807939767837524,
+          "area": 6.8286895751953125
         },
         {
           "name": "Person",
-          "confidence": 0.7146263718605042,
-          "area": 9.274959564208984
+          "confidence": 0.5508852005004883,
+          "area": 10.153770446777344
         },
         {
-          "name": "Person",
-          "confidence": 0.7079107165336609,
-          "area": 5.21240234375
+          "name": "Top",
+          "confidence": 0.5277382135391235,
+          "area": 6.6844940185546875
         },
         {
-          "name": "Clothing",
-          "confidence": 0.7009878158569336,
-          "area": 8.562469482421875
+          "name": "Top",
+          "confidence": 0.5111283659934998,
+          "area": 6.8286895751953125
         }
       ],
       "safeSearchRatings": {
-        "adult": "POSSIBLE",
+        "adult": "VERY_UNLIKELY",
         "spoof": "VERY_UNLIKELY",
-        "medical": "UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "POSSIBLE"
+        "medical": "VERY_UNLIKELY",
+        "violence": "VERY_UNLIKELY",
+        "racy": "VERY_UNLIKELY"
       }
     },
     "categoryName": "Music"
@@ -2264,11 +2732,12 @@
     "channelTitle": "FutureVEVO",
     "categoryId": "10",
     "publishedAt": "2025-02-28T20:00:04Z",
-    "viewCount": 1231078,
-    "likeCount": 67987,
-    "commentCount": 2864,
+    "viewCount": 1359865,
+    "likeCount": 70355,
+    "commentCount": 2914,
     "thumbnailUrl": "https://i.ytimg.com/vi/6OxmafNPn3o/hqdefault.jpg",
-    "ctr": "5.76",
+    "duration": "PT2M54S",
+    "ctr": "5.39",
     "analysis": {
       "text": "vevo",
       "textEntities": 1,
@@ -2377,83 +2846,78 @@
     "categoryName": "Music"
   },
   {
-    "id": "1a3REFH83WA",
-    "title": "Grupo Marca Registrada x Víctor Valverde - El Mayor de los Ranas [En Vivo]",
-    "channelTitle": "RB Music",
-    "categoryId": "10",
-    "publishedAt": "2025-02-28T00:00:31Z",
-    "viewCount": 2779037,
-    "likeCount": 35061,
-    "commentCount": 522,
-    "thumbnailUrl": "https://i.ytimg.com/vi/1a3REFH83WA/hqdefault.jpg",
-    "ctr": "1.28",
+    "id": "rj8Kf3TM9BA",
+    "title": "MrBeast Cut A Table In HALF With Plastic Knives",
+    "channelTitle": "Income Infinity",
+    "categoryId": "24",
+    "publishedAt": "2025-03-01T17:01:02Z",
+    "viewCount": 15591759,
+    "likeCount": 958883,
+    "commentCount": 991,
+    "thumbnailUrl": "https://i.ytimg.com/vi/rj8Kf3TM9BA/hqdefault.jpg",
+    "duration": "PT28S",
+    "ctr": "6.16",
     "analysis": {
-      "text": "",
-      "textEntities": -1,
-      "textCharCount": 0,
-      "hasText": false,
+      "text": "PL\nPLASTIC KNIVES\nES\nINCOMITY",
+      "textEntities": 5,
+      "textCharCount": 29,
+      "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 20,
-            "green": 24,
-            "blue": 40
+            "red": 46,
+            "green": 44,
+            "blue": 46
           },
-          "score": 0.24013903737068176,
-          "pixelFraction": 0.12003516405820847,
-          "hex": "#141828"
+          "score": 0.285265177488327,
+          "pixelFraction": 0.3117557764053345,
+          "hex": "#2e2c2e"
         },
         {
           "color": {
-            "red": 102,
-            "green": 57,
-            "blue": 194
+            "red": 250,
+            "green": 240,
+            "blue": 216
           },
-          "score": 0.05779094621539116,
-          "pixelFraction": 0.005913849454373121,
-          "hex": "#6639c2"
+          "score": 0.13995163142681122,
+          "pixelFraction": 0.10764804482460022,
+          "hex": "#faf0d8"
         },
         {
           "color": {
-            "red": 82,
-            "green": 74,
-            "blue": 134
+            "red": 159,
+            "green": 166,
+            "blue": 190
           },
-          "score": 0.051212869584560394,
-          "pixelFraction": 0.012706784531474113,
-          "hex": "#524a86"
+          "score": 0.09740332514047623,
+          "pixelFraction": 0.05458323284983635,
+          "hex": "#9fa6be"
         },
         {
           "color": {
-            "red": 60,
-            "green": 35,
-            "blue": 127
+            "red": 123,
+            "green": 119,
+            "blue": 121
           },
-          "score": 0.04841737449169159,
-          "pixelFraction": 0.005674099083989859,
-          "hex": "#3c237f"
+          "score": 0.03135193884372711,
+          "pixelFraction": 0.03164708614349365,
+          "hex": "#7b7779"
         },
         {
           "color": {
-            "red": 97,
-            "green": 82,
-            "blue": 56
+            "red": 19,
+            "green": 17,
+            "blue": 17
           },
-          "score": 0.006562391296029091,
-          "pixelFraction": 0.005194597411900759,
-          "hex": "#615238"
+          "score": 0.16858020424842834,
+          "pixelFraction": 0.2524574398994446,
+          "hex": "#131111"
         }
       ],
-      "colorScore": 14,
-      "faceCount": 2,
+      "colorScore": 37,
+      "faceCount": 1,
       "hasFace": true,
       "emotions": [
-        {
-          "joy": "POSSIBLE",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        },
         {
           "joy": "VERY_UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
@@ -2462,217 +2926,38 @@
         }
       ],
       "faceCoverage": {},
-      "objectCount": 10,
+      "objectCount": 4,
       "objects": [
         {
-          "name": "Person",
-          "confidence": 0.8243849277496338,
-          "area": 17.286109924316406
-        },
-        {
           "name": "Top",
-          "confidence": 0.8218806385993958,
-          "area": 7.1773529052734375
-        },
-        {
-          "name": "Top",
-          "confidence": 0.7913762331008911,
-          "area": 7.8533172607421875
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.7892832159996033,
-          "area": 10.76657772064209
-        },
-        {
-          "name": "Pants",
-          "confidence": 0.7803876399993896,
-          "area": 4.79888916015625
-        },
-        {
-          "name": "Pants",
-          "confidence": 0.7797302603721619,
-          "area": 4.8065185546875
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.7617670297622681,
-          "area": 13.88397216796875
+          "confidence": 0.7036628723144531,
+          "area": 13.973236083984375
         },
         {
           "name": "Person",
-          "confidence": 0.760086715221405,
-          "area": 19.89898681640625
+          "confidence": 0.6319312453269958,
+          "area": 30.16500473022461
         },
         {
           "name": "Top",
-          "confidence": 0.7535256147384644,
-          "area": 3.385162353515625
+          "confidence": 0.6181835532188416,
+          "area": 13.973236083984375
         },
         {
-          "name": "Clothing",
-          "confidence": 0.750912070274353,
-          "area": 14.980316162109375
+          "name": "Person",
+          "confidence": 0.6052740812301636,
+          "area": 30.16500473022461
         }
       ],
       "safeSearchRatings": {
         "adult": "VERY_UNLIKELY",
         "spoof": "UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
-        "racy": "VERY_UNLIKELY"
-      }
-    },
-    "categoryName": "Music"
-  },
-  {
-    "id": "gaVPGfhbcKU",
-    "title": "YAILIN LA MAS VIRAL x DJ ADONI - Yo No Olvido (Video Oficial)",
-    "channelTitle": "Yailin La Mas Viral",
-    "categoryId": "10",
-    "publishedAt": "2025-03-03T16:00:06Z",
-    "viewCount": 1160801,
-    "likeCount": 105006,
-    "commentCount": 14708,
-    "thumbnailUrl": "https://i.ytimg.com/vi/gaVPGfhbcKU/hqdefault.jpg",
-    "ctr": "10.31",
-    "analysis": {
-      "text": "毫",
-      "textEntities": 1,
-      "textCharCount": 1,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 26,
-            "green": 24,
-            "blue": 21
-          },
-          "score": 0.08635462075471878,
-          "pixelFraction": 0.07112602889537811,
-          "hex": "#1a1815"
-        },
-        {
-          "color": {
-            "red": 77,
-            "green": 46,
-            "blue": 26
-          },
-          "score": 0.08008798211812973,
-          "pixelFraction": 0.04363461956381798,
-          "hex": "#4d2e1a"
-        },
-        {
-          "color": {
-            "red": 209,
-            "green": 151,
-            "blue": 59
-          },
-          "score": 0.07879780977964401,
-          "pixelFraction": 0.0440342053771019,
-          "hex": "#d1973b"
-        },
-        {
-          "color": {
-            "red": 206,
-            "green": 191,
-            "blue": 164
-          },
-          "score": 0.0666223019361496,
-          "pixelFraction": 0.03204667195677757,
-          "hex": "#cebfa4"
-        },
-        {
-          "color": {
-            "red": 172,
-            "green": 151,
-            "blue": 123
-          },
-          "score": 0.057193025946617126,
-          "pixelFraction": 0.03388475999236107,
-          "hex": "#ac977b"
-        }
-      ],
-      "colorScore": 9,
-      "faceCount": 2,
-      "hasFace": true,
-      "emotions": [
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        },
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        }
-      ],
-      "faceCoverage": {},
-      "objectCount": 10,
-      "objects": [
-        {
-          "name": "Person",
-          "confidence": 0.8764459490776062,
-          "area": 36.33537292480469
-        },
-        {
-          "name": "Person",
-          "confidence": 0.8090178370475769,
-          "area": 25.461673736572266
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.7139851450920105,
-          "area": 11.8255615234375
-        },
-        {
-          "name": "Tableware",
-          "confidence": 0.6665714979171753,
-          "area": 1.837921142578125
-        },
-        {
-          "name": "Shirt",
-          "confidence": 0.656457245349884,
-          "area": 23.018646240234375
-        },
-        {
-          "name": "Tie",
-          "confidence": 0.6421921849250793,
-          "area": 2.191925048828125
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.6415058374404907,
-          "area": 23.018646240234375
-        },
-        {
-          "name": "Top",
-          "confidence": 0.6368834972381592,
-          "area": 23.018646240234375
-        },
-        {
-          "name": "Person",
-          "confidence": 0.5199342370033264,
-          "area": 36.33537292480469
-        },
-        {
-          "name": "Person",
-          "confidence": 0.5198935270309448,
-          "area": 25.461673736572266
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "VERY_UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "UNLIKELY",
         "racy": "UNLIKELY"
       }
     },
-    "categoryName": "Music"
+    "categoryName": "Comedy"
   },
   {
     "id": "NMuwMYTBB1Q",
@@ -2680,11 +2965,12 @@
     "channelTitle": "Brayden Nostalgia",
     "categoryId": "1",
     "publishedAt": "2025-02-28T18:14:00Z",
-    "viewCount": 9565568,
-    "likeCount": 617269,
-    "commentCount": 1833,
+    "viewCount": 11682856,
+    "likeCount": 720868,
+    "commentCount": 2352,
     "thumbnailUrl": "https://i.ytimg.com/vi/NMuwMYTBB1Q/hqdefault.jpg",
-    "ctr": "6.47",
+    "duration": "PT1M1S",
+    "ctr": "6.19",
     "analysis": {
       "text": "Who'd\nWho'd you deal with?I don't know\nher name.\nt know",
       "textEntities": 14,
@@ -2803,11 +3089,12 @@
     "channelTitle": "CelebWeekly",
     "categoryId": "22",
     "publishedAt": "2025-02-28T18:00:08Z",
-    "viewCount": 10737279,
-    "likeCount": 572521,
-    "commentCount": 507,
+    "viewCount": 13347897,
+    "likeCount": 710746,
+    "commentCount": 610,
     "thumbnailUrl": "https://i.ytimg.com/vi/yUO2TxF5uh8/hqdefault.jpg",
-    "ctr": "5.34",
+    "duration": "PT23S",
+    "ctr": "5.33",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -2921,114 +3208,105 @@
     "categoryName": "Comedy"
   },
   {
-    "id": "rj8Kf3TM9BA",
-    "title": "MrBeast Cut A Table In HALF With Plastic Knives",
-    "channelTitle": "Income Infinity",
-    "categoryId": "24",
-    "publishedAt": "2025-03-01T17:01:02Z",
-    "viewCount": 10952181,
-    "likeCount": 718305,
-    "commentCount": 724,
-    "thumbnailUrl": "https://i.ytimg.com/vi/rj8Kf3TM9BA/hqdefault.jpg",
-    "ctr": "6.57",
+    "id": "OCv8ZZ7EzsI",
+    "title": "That Went South REAL Quick 😅",
+    "channelTitle": "clipsofdantes",
+    "categoryId": "20",
+    "publishedAt": "2025-03-01T19:00:21Z",
+    "viewCount": 12884081,
+    "likeCount": 794675,
+    "commentCount": 2536,
+    "thumbnailUrl": "https://i.ytimg.com/vi/OCv8ZZ7EzsI/hqdefault.jpg",
+    "duration": "PT18S",
+    "ctr": "6.19",
     "analysis": {
-      "text": "PL\nPLASTIC KNIVES\nES\nINCOMITY",
-      "textEntities": 5,
-      "textCharCount": 29,
+      "text": "УЕАН",
+      "textEntities": 1,
+      "textCharCount": 4,
       "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 46,
-            "green": 44,
-            "blue": 46
+            "red": 56,
+            "green": 55,
+            "blue": 48
           },
-          "score": 0.285265177488327,
-          "pixelFraction": 0.3117557764053345,
-          "hex": "#2e2c2e"
+          "score": 0.14779910445213318,
+          "pixelFraction": 0.24015024304389954,
+          "hex": "#383730"
         },
         {
           "color": {
-            "red": 250,
-            "green": 240,
-            "blue": 216
+            "red": 9,
+            "green": 28,
+            "blue": 56
           },
-          "score": 0.13995163142681122,
-          "pixelFraction": 0.10764804482460022,
-          "hex": "#faf0d8"
+          "score": 0.12486225366592407,
+          "pixelFraction": 0.0939822569489479,
+          "hex": "#091c38"
         },
         {
           "color": {
-            "red": 159,
-            "green": 166,
-            "blue": 190
+            "red": 24,
+            "green": 81,
+            "blue": 169
           },
-          "score": 0.09740332514047623,
-          "pixelFraction": 0.05458323284983635,
-          "hex": "#9fa6be"
+          "score": 0.0658307671546936,
+          "pixelFraction": 0.021897226572036743,
+          "hex": "#1851a9"
         },
         {
           "color": {
-            "red": 123,
-            "green": 119,
-            "blue": 121
+            "red": 170,
+            "green": 200,
+            "blue": 228
           },
-          "score": 0.03135193884372711,
-          "pixelFraction": 0.03164708614349365,
-          "hex": "#7b7779"
+          "score": 0.06405719369649887,
+          "pixelFraction": 0.05322464555501938,
+          "hex": "#aac8e4"
         },
         {
           "color": {
-            "red": 19,
-            "green": 17,
-            "blue": 17
+            "red": 111,
+            "green": 162,
+            "blue": 222
           },
-          "score": 0.16858020424842834,
-          "pixelFraction": 0.2524574398994446,
-          "hex": "#131111"
+          "score": 0.04529948532581329,
+          "pixelFraction": 0.021497642621397972,
+          "hex": "#6fa2de"
         }
       ],
-      "colorScore": 37,
+      "colorScore": 11,
       "faceCount": 1,
       "hasFace": true,
       "emotions": [
         {
-          "joy": "VERY_UNLIKELY",
+          "joy": "VERY_LIKELY",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
           "surprise": "VERY_UNLIKELY"
         }
       ],
       "faceCoverage": {},
-      "objectCount": 4,
+      "objectCount": 2,
       "objects": [
         {
-          "name": "Top",
-          "confidence": 0.7036628723144531,
-          "area": 13.973236083984375
+          "name": "Person",
+          "confidence": 0.7490641474723816,
+          "area": 14.2822265625
         },
         {
           "name": "Person",
-          "confidence": 0.6319312453269958,
-          "area": 30.16500473022461
-        },
-        {
-          "name": "Top",
-          "confidence": 0.6181835532188416,
-          "area": 13.973236083984375
-        },
-        {
-          "name": "Person",
-          "confidence": 0.6052740812301636,
-          "area": 30.16500473022461
+          "confidence": 0.6932867169380188,
+          "area": 14.2822265625
         }
       ],
       "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "UNLIKELY",
-        "medical": "UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "UNLIKELY"
+        "adult": "UNLIKELY",
+        "spoof": "VERY_LIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "VERY_UNLIKELY",
+        "racy": "POSSIBLE"
       }
     },
     "categoryName": "Comedy"
@@ -3039,11 +3317,12 @@
     "channelTitle": "Saturday Night Live",
     "categoryId": "23",
     "publishedAt": "2025-03-02T05:21:11Z",
-    "viewCount": 15112476,
-    "likeCount": 418852,
-    "commentCount": 44669,
+    "viewCount": 14579846,
+    "likeCount": 429322,
+    "commentCount": 45488,
     "thumbnailUrl": "https://i.ytimg.com/vi/CUpOMSJ1MdU/hqdefault.jpg",
-    "ctr": "3.07",
+    "duration": "PT7M46S",
+    "ctr": "3.26",
     "analysis": {
       "text": "SNL 50\nTECI\nJPPO",
       "textEntities": 4,
@@ -3189,300 +3468,79 @@
     "categoryName": "Comedy"
   },
   {
-    "id": "w2w-rfrwT3Q",
-    "title": "A new kind of robbing the rich to help the poor#movie #shorts",
-    "channelTitle": "arthur95tt3",
+    "id": "Ok4kOv-Zjnk",
+    "title": "Michael B Jordan Breaks A Fan's Jaw?!",
+    "channelTitle": "Crazy Takes",
     "categoryId": "22",
-    "publishedAt": "2025-03-01T09:57:22Z",
-    "viewCount": 8817321,
-    "likeCount": 711676,
-    "commentCount": 889,
-    "thumbnailUrl": "https://i.ytimg.com/vi/w2w-rfrwT3Q/hqdefault.jpg",
-    "ctr": "8.08",
+    "publishedAt": "2025-02-28T09:05:55Z",
+    "viewCount": 6309855,
+    "likeCount": 388001,
+    "commentCount": 287,
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ok4kOv-Zjnk/hqdefault.jpg",
+    "duration": "PT35S",
+    "ctr": "6.15",
     "analysis": {
-      "text": "You,\nYou, however, are not. Pow!\nPow!",
-      "textEntities": 13,
-      "textCharCount": 37,
-      "hasText": true,
+      "text": "",
+      "textEntities": -1,
+      "textCharCount": 0,
+      "hasText": false,
       "dominantColors": [
         {
           "color": {
-            "red": 20,
-            "green": 22,
-            "blue": 21
-          },
-          "score": 0.4767421782016754,
-          "pixelFraction": 0.6048909425735474,
-          "hex": "#141615"
-        },
-        {
-          "color": {
-            "red": 143,
-            "green": 155,
-            "blue": 49
-          },
-          "score": 0.01938660256564617,
-          "pixelFraction": 0.003276592353358865,
-          "hex": "#8f9b31"
-        },
-        {
-          "color": {
-            "red": 112,
-            "green": 125,
-            "blue": 59
-          },
-          "score": 0.018157579004764557,
-          "pixelFraction": 0.004954847041517496,
-          "hex": "#707d3b"
-        },
-        {
-          "color": {
-            "red": 244,
-            "green": 247,
-            "blue": 245
-          },
-          "score": 0.00856528989970684,
-          "pixelFraction": 0.011188363656401634,
-          "hex": "#f4f7f5"
-        },
-        {
-          "color": {
-            "red": 223,
-            "green": 231,
-            "blue": 162
-          },
-          "score": 0.0020643901079893112,
-          "pixelFraction": 0.0004795013228431344,
-          "hex": "#dfe7a2"
-        }
-      ],
-      "colorScore": 20,
-      "faceCount": 1,
-      "hasFace": true,
-      "emotions": [
-        {
-          "joy": "UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        }
-      ],
-      "faceCoverage": {},
-      "objectCount": 3,
-      "objects": [
-        {
-          "name": "Person",
-          "confidence": 0.6635717749595642,
-          "area": 22.925567626953125
-        },
-        {
-          "name": "Lifejacket",
-          "confidence": 0.5293026566505432,
-          "area": 14.055633544921875
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.5274856686592102,
-          "area": 14.055633544921875
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "UNLIKELY",
-        "spoof": "VERY_UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "VERY_UNLIKELY"
-      }
-    },
-    "categoryName": "Comedy"
-  },
-  {
-    "id": "swXR24eyU90",
-    "title": "part1since people don't know what they're talking about, there's no point in forcing it..#shorts",
-    "channelTitle": "Streamlined Movies",
-    "categoryId": "22",
-    "publishedAt": "2025-02-26T21:55:58Z",
-    "viewCount": 8929208,
-    "likeCount": 569850,
-    "commentCount": 2859,
-    "thumbnailUrl": "https://i.ytimg.com/vi/swXR24eyU90/hqdefault.jpg",
-    "ctr": "6.41",
-    "analysis": {
-      "text": "Y\nALAM 212UM\nVARKUTAZ\nYou ain't doing it here.\nre.",
-      "textEntities": 12,
-      "textCharCount": 50,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 18,
+            "red": 27,
             "green": 19,
-            "blue": 15
+            "blue": 17
           },
-          "score": 0.7071552872657776,
-          "pixelFraction": 0.7475425601005554,
-          "hex": "#12130f"
+          "score": 0.29778844118118286,
+          "pixelFraction": 0.3165507912635803,
+          "hex": "#1b1311"
         },
         {
           "color": {
-            "red": 47,
-            "green": 50,
+            "red": 186,
+            "green": 149,
+            "blue": 146
+          },
+          "score": 0.01155113149434328,
+          "pixelFraction": 0.009350275620818138,
+          "hex": "#ba9592"
+        },
+        {
+          "color": {
+            "red": 38,
+            "green": 19,
+            "blue": 17
+          },
+          "score": 0.2481103539466858,
+          "pixelFraction": 0.1436905562877655,
+          "hex": "#261311"
+        },
+        {
+          "color": {
+            "red": 58,
+            "green": 45,
             "blue": 43
           },
-          "score": 0.13875426352024078,
-          "pixelFraction": 0.14480939507484436,
-          "hex": "#2f322b"
+          "score": 0.19532497227191925,
+          "pixelFraction": 0.1761368215084076,
+          "hex": "#3a2d2b"
         },
         {
           "color": {
-            "red": 55,
-            "green": 47,
-            "blue": 31
+            "red": 66,
+            "green": 43,
+            "blue": 41
           },
-          "score": 0.04641083627939224,
-          "pixelFraction": 0.035722848027944565,
-          "hex": "#372f1f"
-        },
-        {
-          "color": {
-            "red": 80,
-            "green": 78,
-            "blue": 68
-          },
-          "score": 0.03703073784708977,
-          "pixelFraction": 0.029409414157271385,
-          "hex": "#504e44"
-        },
-        {
-          "color": {
-            "red": 37,
-            "green": 30,
-            "blue": 16
-          },
-          "score": 0.029170241206884384,
-          "pixelFraction": 0.01742188073694706,
-          "hex": "#251e10"
+          "score": 0.06855519115924835,
+          "pixelFraction": 0.045712459832429886,
+          "hex": "#422b29"
         }
       ],
-      "colorScore": 12,
+      "colorScore": 29,
       "faceCount": 1,
       "hasFace": true,
       "emotions": [
         {
-          "joy": "LIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        }
-      ],
-      "faceCoverage": {},
-      "objectCount": 3,
-      "objects": [
-        {
-          "name": "Person",
-          "confidence": 0.8197726607322693,
-          "area": 40.86103439331055
-        },
-        {
-          "name": "Person",
-          "confidence": 0.6458181142807007,
-          "area": 40.86103439331055
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.6218208074569702,
-          "area": 20.76416015625
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "POSSIBLE",
-        "medical": "VERY_UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "VERY_UNLIKELY"
-      }
-    },
-    "categoryName": "Comedy"
-  },
-  {
-    "id": "sAgv2JvK0iA",
-    "title": "Sharks meet The Bug Guy 🪲 | Shark Tank US",
-    "channelTitle": "painfulset",
-    "categoryId": "22",
-    "publishedAt": "2025-02-25T21:52:25Z",
-    "viewCount": 25459065,
-    "likeCount": 1604620,
-    "commentCount": 1845,
-    "thumbnailUrl": "https://i.ytimg.com/vi/sAgv2JvK0iA/hqdefault.jpg",
-    "ctr": "6.31",
-    "analysis": {
-      "text": "A DINNER",
-      "textEntities": 2,
-      "textCharCount": 8,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 22,
-            "green": 17,
-            "blue": 22
-          },
-          "score": 0.31189659237861633,
-          "pixelFraction": 0.5208183526992798,
-          "hex": "#161116"
-        },
-        {
-          "color": {
-            "red": 33,
-            "green": 18,
-            "blue": 52
-          },
-          "score": 0.10262034088373184,
-          "pixelFraction": 0.047790296375751495,
-          "hex": "#211234"
-        },
-        {
-          "color": {
-            "red": 25,
-            "green": 33,
-            "blue": 126
-          },
-          "score": 0.030614040791988373,
-          "pixelFraction": 0.0074322703294456005,
-          "hex": "#19217e"
-        },
-        {
-          "color": {
-            "red": 131,
-            "green": 115,
-            "blue": 153
-          },
-          "score": 0.024195745587348938,
-          "pixelFraction": 0.01822105050086975,
-          "hex": "#837399"
-        },
-        {
-          "color": {
-            "red": 137,
-            "green": 47,
-            "blue": 27
-          },
-          "score": 0.0023153016809374094,
-          "pixelFraction": 0.0009590026456862688,
-          "hex": "#892f1b"
-        }
-      ],
-      "colorScore": 10,
-      "faceCount": 2,
-      "hasFace": true,
-      "emotions": [
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "POSSIBLE"
-        },
-        {
           "joy": "VERY_UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
@@ -3490,35 +3548,25 @@
         }
       ],
       "faceCoverage": {},
-      "objectCount": 4,
+      "objectCount": 2,
       "objects": [
         {
           "name": "Person",
-          "confidence": 0.7178701758384705,
-          "area": 37.863922119140625
+          "confidence": 0.7943592071533203,
+          "area": 42.578125
         },
         {
           "name": "Person",
-          "confidence": 0.6512765288352966,
-          "area": 37.863922119140625
-        },
-        {
-          "name": "Pants",
-          "confidence": 0.6028191447257996,
-          "area": 8.071136474609375
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.529255211353302,
-          "area": 8.071136474609375
+          "confidence": 0.620747983455658,
+          "area": 42.578125
         }
       ],
       "safeSearchRatings": {
         "adult": "UNLIKELY",
         "spoof": "UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
-        "racy": "UNLIKELY"
+        "medical": "POSSIBLE",
+        "violence": "UNLIKELY",
+        "racy": "VERY_LIKELY"
       }
     },
     "categoryName": "Comedy"
@@ -3529,11 +3577,12 @@
     "channelTitle": "HyperDrive",
     "categoryId": "1",
     "publishedAt": "2025-02-26T20:15:00Z",
-    "viewCount": 14825665,
-    "likeCount": 504284,
-    "commentCount": 1629,
+    "viewCount": 16629730,
+    "likeCount": 556449,
+    "commentCount": 1861,
     "thumbnailUrl": "https://i.ytimg.com/vi/CpTwtyzdGKA/hqdefault.jpg",
-    "ctr": "3.41",
+    "duration": "PT1M",
+    "ctr": "3.36",
     "analysis": {
       "text": "Ocean View\nRING",
       "textEntities": 3,
@@ -3627,182 +3676,75 @@
     "categoryName": "Comedy"
   },
   {
-    "id": "Yz7WqS3cwNI",
-    "title": "He’s going to be a mass murderer #movie #shorts",
-    "channelTitle": "CinemaSphere",
+    "id": "O-LFCxMF5sU",
+    "title": "Mr. Wonderful Humbles all Artist With a Shark Drawing | Shark Tank US",
+    "channelTitle": "painfulset",
     "categoryId": "22",
-    "publishedAt": "2025-02-25T09:40:57Z",
-    "viewCount": 22933140,
-    "likeCount": 1702685,
-    "commentCount": 5848,
-    "thumbnailUrl": "https://i.ytimg.com/vi/Yz7WqS3cwNI/hqdefault.jpg",
-    "ctr": "7.45",
+    "publishedAt": "2025-02-28T21:16:47Z",
+    "viewCount": 15066759,
+    "likeCount": 665384,
+    "commentCount": 604,
+    "thumbnailUrl": "https://i.ytimg.com/vi/O-LFCxMF5sU/hqdefault.jpg",
+    "duration": "PT40S",
+    "ctr": "4.42",
     "analysis": {
-      "text": "Autho\nfor a\nAuthorities continue to search\nfor any additional eviderica,\nsearch\nence,",
-      "textEntities": 15,
-      "textCharCount": 85,
+      "text": "YOUR GHOST HAND",
+      "textEntities": 3,
+      "textCharCount": 15,
       "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 60,
-            "green": 53,
-            "blue": 50
+            "red": 21,
+            "green": 10,
+            "blue": 10
           },
-          "score": 0.3722292482852936,
-          "pixelFraction": 0.33461201190948486,
-          "hex": "#3c3532"
+          "score": 0.6135290861129761,
+          "pixelFraction": 0.6909614205360413,
+          "hex": "#150a0a"
         },
         {
           "color": {
-            "red": 220,
-            "green": 183,
-            "blue": 169
+            "red": 79,
+            "green": 45,
+            "blue": 37
           },
-          "score": 0.05302140861749649,
-          "pixelFraction": 0.057380326092243195,
-          "hex": "#dcb7a9"
+          "score": 0.04988498240709305,
+          "pixelFraction": 0.030208583921194077,
+          "hex": "#4f2d25"
         },
         {
           "color": {
-            "red": 24,
-            "green": 22,
-            "blue": 20
+            "red": 141,
+            "green": 204,
+            "blue": 221
           },
-          "score": 0.30699387192726135,
-          "pixelFraction": 0.3624230921268463,
-          "hex": "#181614"
-        },
-        {
-          "color": {
-            "red": 88,
-            "green": 81,
-            "blue": 75
-          },
-          "score": 0.04586784541606903,
-          "pixelFraction": 0.03939902409911156,
-          "hex": "#58514b"
-        },
-        {
-          "color": {
-            "red": 101,
-            "green": 83,
-            "blue": 69
-          },
-          "score": 0.021735547110438347,
-          "pixelFraction": 0.014065371826291084,
-          "hex": "#655345"
-        }
-      ],
-      "colorScore": 24,
-      "faceCount": 1,
-      "hasFace": true,
-      "emotions": [
-        {
-          "joy": "VERY_UNLIKELY",
-          "sorrow": "VERY_UNLIKELY",
-          "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
-        }
-      ],
-      "faceCoverage": {},
-      "objectCount": 3,
-      "objects": [
-        {
-          "name": "Person",
-          "confidence": 0.770218551158905,
-          "area": 33.5601806640625
-        },
-        {
-          "name": "Person",
-          "confidence": 0.5367651581764221,
-          "area": 33.5601806640625
-        },
-        {
-          "name": "Person",
-          "confidence": 0.5262802243232727,
-          "area": 28.707683086395264
-        }
-      ],
-      "safeSearchRatings": {
-        "adult": "VERY_UNLIKELY",
-        "spoof": "VERY_UNLIKELY",
-        "medical": "UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "UNLIKELY"
-      }
-    },
-    "categoryName": "Comedy"
-  },
-  {
-    "id": "Im2Q_nKT-Tc",
-    "title": "He is transforming into a wooden figure!#shorts #onceuponatime #fantasy #viralvideo #story",
-    "channelTitle": "Tiffany132",
-    "categoryId": "1",
-    "publishedAt": "2025-02-27T03:36:11Z",
-    "viewCount": 7433289,
-    "likeCount": 565022,
-    "commentCount": 742,
-    "thumbnailUrl": "https://i.ytimg.com/vi/Im2Q_nKT-Tc/hqdefault.jpg",
-    "ctr": "7.61",
-    "analysis": {
-      "text": "In a w\nIn a way, it first gave you life.\nu life.",
-      "textEntities": 16,
-      "textCharCount": 48,
-      "hasText": true,
-      "dominantColors": [
-        {
-          "color": {
-            "red": 20,
-            "green": 14,
-            "blue": 6
-          },
-          "score": 0.6294295787811279,
-          "pixelFraction": 0.6943978071212769,
-          "hex": "#140e06"
-        },
-        {
-          "color": {
-            "red": 95,
-            "green": 76,
-            "blue": 33
-          },
-          "score": 0.025383302941918373,
-          "pixelFraction": 0.01822105050086975,
-          "hex": "#5f4c21"
-        },
-        {
-          "color": {
-            "red": 175,
-            "green": 153,
-            "blue": 121
-          },
-          "score": 0.008490342646837234,
-          "pixelFraction": 0.005833932664245367,
-          "hex": "#af9979"
-        },
-        {
-          "color": {
-            "red": 151,
-            "green": 110,
-            "blue": 67
-          },
-          "score": 0.0026899694930762053,
-          "pixelFraction": 0.010309278033673763,
-          "hex": "#976e43"
+          "score": 0.02406318299472332,
+          "pixelFraction": 0.009110525250434875,
+          "hex": "#8dccdd"
         },
         {
           "color": {
             "red": 37,
-            "green": 28,
-            "blue": 15
+            "green": 14,
+            "blue": 13
           },
-          "score": 0.09418167918920517,
-          "pixelFraction": 0.05730040743947029,
-          "hex": "#251c0f"
+          "score": 0.08151688426733017,
+          "pixelFraction": 0.04307520017027855,
+          "hex": "#250e0d"
+        },
+        {
+          "color": {
+            "red": 54,
+            "green": 56,
+            "blue": 57
+          },
+          "score": 0.03283682093024254,
+          "pixelFraction": 0.03388475999236107,
+          "hex": "#363839"
         }
       ],
-      "colorScore": 25,
+      "colorScore": 19,
       "faceCount": 1,
       "hasFace": true,
       "emotions": [
@@ -3814,30 +3756,294 @@
         }
       ],
       "faceCoverage": {},
-      "objectCount": 3,
+      "objectCount": 5,
       "objects": [
         {
           "name": "Person",
-          "confidence": 0.7555829882621765,
-          "area": 33.88786315917969
+          "confidence": 0.8448376655578613,
+          "area": 39.951181411743164
         },
         {
-          "name": "Clothing",
-          "confidence": 0.7132898569107056,
-          "area": 22.8271484375
+          "name": "Coat",
+          "confidence": 0.6032178997993469,
+          "area": 26.993751525878906
         },
         {
           "name": "Person",
-          "confidence": 0.6263278126716614,
-          "area": 33.88786315917969
+          "confidence": 0.5601580739021301,
+          "area": 39.951181411743164
+        },
+        {
+          "name": "Outerwear",
+          "confidence": 0.5439943671226501,
+          "area": 26.993751525878906
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.528619110584259,
+          "area": 26.993751525878906
         }
       ],
       "safeSearchRatings": {
         "adult": "UNLIKELY",
         "spoof": "UNLIKELY",
-        "medical": "UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "UNLIKELY"
+      }
+    },
+    "categoryName": "Comedy"
+  },
+  {
+    "id": "kHgma1XJisQ",
+    "title": "Come on kid let's just play poker | Maverick #movie",
+    "channelTitle": "Tyler Movies",
+    "categoryId": "1",
+    "publishedAt": "2025-03-01T14:57:12Z",
+    "viewCount": 5216682,
+    "likeCount": 186109,
+    "commentCount": 1730,
+    "thumbnailUrl": "https://i.ytimg.com/vi/kHgma1XJisQ/hqdefault.jpg",
+    "duration": "PT1M",
+    "ctr": "3.60",
+    "analysis": {
+      "text": "ABSOLUTELY NONE WHATSOEVER",
+      "textEntities": 3,
+      "textCharCount": 26,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 18,
+            "green": 13,
+            "blue": 10
+          },
+          "score": 0.6460570693016052,
+          "pixelFraction": 0.7368336915969849,
+          "hex": "#120d0a"
+        },
+        {
+          "color": {
+            "red": 72,
+            "green": 42,
+            "blue": 30
+          },
+          "score": 0.0877206027507782,
+          "pixelFraction": 0.04419403895735741,
+          "hex": "#482a1e"
+        },
+        {
+          "color": {
+            "red": 130,
+            "green": 54,
+            "blue": 24
+          },
+          "score": 0.0017167199403047562,
+          "pixelFraction": 0.005833932664245367,
+          "hex": "#823618"
+        },
+        {
+          "color": {
+            "red": 55,
+            "green": 46,
+            "blue": 40
+          },
+          "score": 0.11035294085741043,
+          "pixelFraction": 0.08383281528949738,
+          "hex": "#372e28"
+        },
+        {
+          "color": {
+            "red": 65,
+            "green": 46,
+            "blue": 34
+          },
+          "score": 0.046526242047548294,
+          "pixelFraction": 0.02397506684064865,
+          "hex": "#412e22"
+        }
+      ],
+      "colorScore": 18,
+      "faceCount": 1,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 4,
+      "objects": [
+        {
+          "name": "Tie",
+          "confidence": 0.8487620949745178,
+          "area": 2.301025390625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6541142463684082,
+          "area": 28.507232666015625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6295545101165771,
+          "area": 28.507232666015625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.5296221375465393,
+          "area": 28.491318225860596
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "POSSIBLE",
+        "medical": "VERY_UNLIKELY",
         "violence": "UNLIKELY",
         "racy": "VERY_UNLIKELY"
+      }
+    },
+    "categoryName": "Comedy"
+  },
+  {
+    "id": "Q7LrpCn_mZk",
+    "title": "ToRung comedy: magic knife😂",
+    "channelTitle": "ToRung",
+    "categoryId": "23",
+    "publishedAt": "2025-03-02T13:01:29Z",
+    "viewCount": 44129669,
+    "likeCount": 904343,
+    "commentCount": 742,
+    "thumbnailUrl": "https://i.ytimg.com/vi/Q7LrpCn_mZk/hqdefault.jpg",
+    "duration": "PT15S",
+    "ctr": "2.05",
+    "analysis": {
+      "text": "AIR JORDAN\nAIR JORDAN",
+      "textEntities": 4,
+      "textCharCount": 21,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 22,
+            "green": 22,
+            "blue": 25
+          },
+          "score": 0.14120128750801086,
+          "pixelFraction": 0.21114040911197662,
+          "hex": "#161619"
+        },
+        {
+          "color": {
+            "red": 54,
+            "green": 23,
+            "blue": 15
+          },
+          "score": 0.08879569172859192,
+          "pixelFraction": 0.06633101403713226,
+          "hex": "#36170f"
+        },
+        {
+          "color": {
+            "red": 252,
+            "green": 82,
+            "blue": 51
+          },
+          "score": 0.06195344030857086,
+          "pixelFraction": 0.020378805696964264,
+          "hex": "#fc5233"
+        },
+        {
+          "color": {
+            "red": 25,
+            "green": 47,
+            "blue": 103
+          },
+          "score": 0.053424663841724396,
+          "pixelFraction": 0.017501797527074814,
+          "hex": "#192f67"
+        },
+        {
+          "color": {
+            "red": 203,
+            "green": 197,
+            "blue": 188
+          },
+          "score": 0.032460492104291916,
+          "pixelFraction": 0.039159275591373444,
+          "hex": "#cbc5bc"
+        }
+      ],
+      "colorScore": 8,
+      "faceCount": 2,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        },
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 8,
+      "objects": [
+        {
+          "name": "Person",
+          "confidence": 0.7164591550827026,
+          "area": 10.4522705078125
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6886875033378601,
+          "area": 20.555496215820312
+        },
+        {
+          "name": "Dress",
+          "confidence": 0.6795223951339722,
+          "area": 17.917633056640625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6722061038017273,
+          "area": 10.4522705078125
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6460154056549072,
+          "area": 20.555496215820312
+        },
+        {
+          "name": "Hat",
+          "confidence": 0.5612948536872864,
+          "area": 1.7303466796875
+        },
+        {
+          "name": "Hat",
+          "confidence": 0.5454763174057007,
+          "area": 8.7615966796875
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.5100423097610474,
+          "area": 14.912796020507812
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "UNLIKELY",
+        "spoof": "POSSIBLE",
+        "medical": "UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "POSSIBLE"
       }
     },
     "categoryName": "Comedy"
@@ -3848,11 +4054,12 @@
     "channelTitle": "Grazhina",
     "categoryId": "22",
     "publishedAt": "2025-02-24T18:04:13Z",
-    "viewCount": 1076862,
-    "likeCount": 52143,
-    "commentCount": 361,
+    "viewCount": 1090871,
+    "likeCount": 52787,
+    "commentCount": 365,
     "thumbnailUrl": "https://i.ytimg.com/vi/UjUS76k1f-w/hqdefault.jpg",
-    "ctr": "4.88",
+    "duration": "PT1M5S",
+    "ctr": "4.87",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -3956,11 +4163,12 @@
     "channelTitle": "Saba Ibrahim",
     "categoryId": "22",
     "publishedAt": "2025-03-04T09:00:54Z",
-    "viewCount": 1145967,
-    "likeCount": 51052,
-    "commentCount": 3198,
+    "viewCount": 1226306,
+    "likeCount": 52613,
+    "commentCount": 3291,
     "thumbnailUrl": "https://i.ytimg.com/vi/_9V_ulalfSg/hqdefault.jpg",
-    "ctr": "4.73",
+    "duration": "PT17M18S",
+    "ctr": "4.56",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -4023,13 +4231,13 @@
       "hasFace": true,
       "emotions": [
         {
-          "joy": "UNLIKELY",
+          "joy": "LIKELY",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
           "surprise": "VERY_UNLIKELY"
         },
         {
-          "joy": "LIKELY",
+          "joy": "UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
           "surprise": "VERY_UNLIKELY"
@@ -4095,16 +4303,286 @@
     "categoryName": "People & Blogs"
   },
   {
+    "id": "Y4D7eDiM83g",
+    "title": "Путь Насти Туман к главной цели",
+    "channelTitle": "Настя ЧПЕК Туман",
+    "categoryId": "2",
+    "publishedAt": "2025-02-20T15:47:34Z",
+    "viewCount": 1489847,
+    "likeCount": 40818,
+    "commentCount": 3510,
+    "thumbnailUrl": "https://i.ytimg.com/vi/Y4D7eDiM83g/hqdefault.jpg",
+    "duration": "PT1M31S",
+    "ctr": "2.98",
+    "analysis": {
+      "text": "если вам интересна\nМоя история",
+      "textEntities": 5,
+      "textCharCount": 30,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 175,
+            "green": 154,
+            "blue": 128
+          },
+          "score": 0.10774268209934235,
+          "pixelFraction": 0.024214817211031914,
+          "hex": "#af9a80"
+        },
+        {
+          "color": {
+            "red": 187,
+            "green": 173,
+            "blue": 42
+          },
+          "score": 0.002489968668669462,
+          "pixelFraction": 0.0000799168847152032,
+          "hex": "#bbad2a"
+        },
+        {
+          "color": {
+            "red": 209,
+            "green": 190,
+            "blue": 160
+          },
+          "score": 0.08979521691799164,
+          "pixelFraction": 0.014784623868763447,
+          "hex": "#d1bea0"
+        },
+        {
+          "color": {
+            "red": 184,
+            "green": 153,
+            "blue": 100
+          },
+          "score": 0.078572116792202,
+          "pixelFraction": 0.02237672731280327,
+          "hex": "#b89964"
+        },
+        {
+          "color": {
+            "red": 138,
+            "green": 119,
+            "blue": 93
+          },
+          "score": 0.06213517114520073,
+          "pixelFraction": 0.035163428634405136,
+          "hex": "#8a775d"
+        }
+      ],
+      "colorScore": 5,
+      "faceCount": 2,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        },
+        {
+          "joy": "VERY_UNLIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 10,
+      "objects": [
+        {
+          "name": "Top",
+          "confidence": 0.7954859137535095,
+          "area": 1.42059326171875
+        },
+        {
+          "name": "Top",
+          "confidence": 0.790168285369873,
+          "area": 1.9512176513671875
+        },
+        {
+          "name": "Top",
+          "confidence": 0.7883805632591248,
+          "area": 5.161285400390625
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.7380886077880859,
+          "area": 5.161285400390625
+        },
+        {
+          "name": "Person",
+          "confidence": 0.7251861691474915,
+          "area": 13.796806335449219
+        },
+        {
+          "name": "Person",
+          "confidence": 0.7230038642883301,
+          "area": 7.8174591064453125
+        },
+        {
+          "name": "Person",
+          "confidence": 0.7207673788070679,
+          "area": 11.725616455078125
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6642725467681885,
+          "area": 7.8174591064453125
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.6627845764160156,
+          "area": 1.42059326171875
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.6516615152359009,
+          "area": 1.720428466796875
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "UNLIKELY",
+        "spoof": "UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "POSSIBLE"
+      }
+    },
+    "categoryName": "People & Blogs"
+  },
+  {
+    "id": "eD9mCnWt0M4",
+    "title": "رجعت إلى سوريا وانصدمت من الواقع (بدون مجاملات)",
+    "channelTitle": "Ibn Hattuta Travels",
+    "categoryId": "24",
+    "publishedAt": "2025-02-24T19:24:01Z",
+    "viewCount": 1227040,
+    "likeCount": 34196,
+    "commentCount": 3088,
+    "thumbnailUrl": "https://i.ytimg.com/vi/eD9mCnWt0M4/hqdefault.jpg",
+    "duration": "PT59M56S",
+    "ctr": "3.04",
+    "analysis": {
+      "text": "اليرموك",
+      "textEntities": 1,
+      "textCharCount": 7,
+      "hasText": true,
+      "dominantColors": [
+        {
+          "color": {
+            "red": 6,
+            "green": 4,
+            "blue": 4
+          },
+          "score": 0.15594501793384552,
+          "pixelFraction": 0.2703588306903839,
+          "hex": "#060404"
+        },
+        {
+          "color": {
+            "red": 192,
+            "green": 193,
+            "blue": 191
+          },
+          "score": 0.1271275132894516,
+          "pixelFraction": 0.1629505306482315,
+          "hex": "#c0c1bf"
+        },
+        {
+          "color": {
+            "red": 136,
+            "green": 119,
+            "blue": 100
+          },
+          "score": 0.07193060219287872,
+          "pixelFraction": 0.050107888877391815,
+          "hex": "#887764"
+        },
+        {
+          "color": {
+            "red": 222,
+            "green": 151,
+            "blue": 14
+          },
+          "score": 0.03054758906364441,
+          "pixelFraction": 0.008950691670179367,
+          "hex": "#de970e"
+        },
+        {
+          "color": {
+            "red": 185,
+            "green": 153,
+            "blue": 58
+          },
+          "score": 0.010425920598208904,
+          "pixelFraction": 0.0030368417501449585,
+          "hex": "#b9993a"
+        }
+      ],
+      "colorScore": 35,
+      "faceCount": 1,
+      "hasFace": true,
+      "emotions": [
+        {
+          "joy": "LIKELY",
+          "sorrow": "VERY_UNLIKELY",
+          "anger": "VERY_UNLIKELY",
+          "surprise": "VERY_UNLIKELY"
+        }
+      ],
+      "faceCoverage": {},
+      "objectCount": 5,
+      "objects": [
+        {
+          "name": "Person",
+          "confidence": 0.8793153762817383,
+          "area": 18.185043334960938
+        },
+        {
+          "name": "Person",
+          "confidence": 0.6674343943595886,
+          "area": 18.185043334960938
+        },
+        {
+          "name": "Clothing",
+          "confidence": 0.6632259488105774,
+          "area": 9.8052978515625
+        },
+        {
+          "name": "Jacket",
+          "confidence": 0.6625426411628723,
+          "area": 9.8052978515625
+        },
+        {
+          "name": "Outerwear",
+          "confidence": 0.6424065828323364,
+          "area": 9.8052978515625
+        }
+      ],
+      "safeSearchRatings": {
+        "adult": "VERY_UNLIKELY",
+        "spoof": "POSSIBLE",
+        "medical": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
+        "racy": "VERY_UNLIKELY"
+      }
+    },
+    "categoryName": "People & Blogs"
+  },
+  {
     "id": "AqjkzQ0cqTA",
     "title": "Bullet counter on OPOS Venator",
     "channelTitle": "Polenar Tactical",
     "categoryId": "17",
     "publishedAt": "2025-03-02T08:00:07Z",
-    "viewCount": 4056021,
-    "likeCount": 173542,
-    "commentCount": 5655,
+    "viewCount": 6428903,
+    "likeCount": 257500,
+    "commentCount": 8439,
     "thumbnailUrl": "https://i.ytimg.com/vi/AqjkzQ0cqTA/hqdefault.jpg",
-    "ctr": "4.42",
+    "duration": "PT41S",
+    "ctr": "4.14",
     "analysis": {
       "text": "",
       "textEntities": -1,
@@ -4185,10 +4663,11 @@
     "channelTitle": "Bass Super Test",
     "categoryId": "24",
     "publishedAt": "2025-02-23T14:08:00Z",
-    "viewCount": 65400454,
-    "likeCount": 1070637,
-    "commentCount": 3031,
+    "viewCount": 65906476,
+    "likeCount": 1080127,
+    "commentCount": 3058,
     "thumbnailUrl": "https://i.ytimg.com/vi/q2ecsrhHIlQ/hqdefault.jpg",
+    "duration": "PT11S",
     "ctr": "1.64",
     "analysis": {
       "text": "NEW\nNEW FOAM ROUND\nUND",
@@ -4265,74 +4744,75 @@
     "categoryName": "Science & Technology"
   },
   {
-    "id": "5jUcIhwzz98",
-    "title": "Nintendo Switch Download Speed Trick?",
-    "channelTitle": "EmSwizzle",
-    "categoryId": "20",
-    "publishedAt": "2025-02-26T20:00:03Z",
-    "viewCount": 6256116,
-    "likeCount": 241095,
-    "commentCount": 597,
-    "thumbnailUrl": "https://i.ytimg.com/vi/5jUcIhwzz98/hqdefault.jpg",
-    "ctr": "3.86",
+    "id": "yZna2zNgaFc",
+    "title": "What Is GibberLink Mode?",
+    "channelTitle": "Thomas Mulligan",
+    "categoryId": "28",
+    "publishedAt": "2025-03-04T15:01:16Z",
+    "viewCount": 2787677,
+    "likeCount": 287690,
+    "commentCount": 2853,
+    "thumbnailUrl": "https://i.ytimg.com/vi/yZna2zNgaFc/hqdefault.jpg",
+    "duration": "PT1M",
+    "ctr": "10.42",
     "analysis": {
-      "text": "Nido\nSwitch\nTRICK",
-      "textEntities": 3,
-      "textCharCount": 17,
+      "text": "for ai transparency\nand control\nwhere But Here",
+      "textEntities": 8,
+      "textCharCount": 46,
       "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 67,
-            "green": 58,
-            "blue": 57
+            "red": 46,
+            "green": 40,
+            "blue": 36
           },
-          "score": 0.14412163197994232,
-          "pixelFraction": 0.225765198469162,
-          "hex": "#433a39"
+          "score": 0.295999675989151,
+          "pixelFraction": 0.31727004051208496,
+          "hex": "#2e2824"
         },
         {
           "color": {
-            "red": 233,
-            "green": 226,
-            "blue": 227
+            "red": 139,
+            "green": 123,
+            "blue": 105
           },
-          "score": 0.07305029779672623,
-          "pixelFraction": 0.12011507898569107,
-          "hex": "#e9e2e3"
+          "score": 0.1126997321844101,
+          "pixelFraction": 0.10117477923631668,
+          "hex": "#8b7b69"
         },
         {
           "color": {
-            "red": 79,
-            "green": 112,
-            "blue": 157
+            "red": 26,
+            "green": 26,
+            "blue": 74
           },
-          "score": 0.045882511883974075,
-          "pixelFraction": 0.02085830643773079,
-          "hex": "#4f709d"
+          "score": 0.02846139669418335,
+          "pixelFraction": 0.008870773948729038,
+          "hex": "#1a1a4a"
         },
         {
           "color": {
-            "red": 8,
-            "green": 214,
-            "blue": 32
+            "red": 114,
+            "green": 115,
+            "blue": 182
           },
-          "score": 0.026936912909150124,
-          "pixelFraction": 0.005594181828200817,
-          "hex": "#08d620"
+          "score": 0.0032959794625639915,
+          "pixelFraction": 0.0011188364587724209,
+          "hex": "#7273b6"
         },
         {
           "color": {
-            "red": 232,
-            "green": 49,
-            "blue": 68
+            "red": 96,
+            "green": 99,
+            "blue": 204
           },
-          "score": 0.01924309879541397,
-          "pixelFraction": 0.005594181828200817,
-          "hex": "#e83144"
+          "score": 0.0028434148989617825,
+          "pixelFraction": 0.0006393350777216256,
+          "hex": "#6063cc"
         }
       ],
-      "colorScore": 27,
+      "colorScore": 15,
       "faceCount": 1,
       "hasFace": true,
       "emotions": [
@@ -4340,43 +4820,38 @@
           "joy": "VERY_UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
-          "surprise": "VERY_UNLIKELY"
+          "surprise": "UNLIKELY"
         }
       ],
       "faceCoverage": {},
-      "objectCount": 5,
+      "objectCount": 4,
       "objects": [
         {
           "name": "Person",
-          "confidence": 0.8052962422370911,
-          "area": 31.104564666748047
+          "confidence": 0.8494062423706055,
+          "area": 51.09405517578125
+        },
+        {
+          "name": "Top",
+          "confidence": 0.7502391338348389,
+          "area": 18.199539184570312
         },
         {
           "name": "Person",
-          "confidence": 0.7003235816955566,
-          "area": 31.104564666748047
-        },
-        {
-          "name": "Top",
-          "confidence": 0.6843039393424988,
-          "area": 14.801025390625
-        },
-        {
-          "name": "Top",
-          "confidence": 0.6645503640174866,
-          "area": 14.801025390625
+          "confidence": 0.623679518699646,
+          "area": 51.09405517578125
         },
         {
           "name": "Clothing",
-          "confidence": 0.5518061518669128,
-          "area": 14.801025390625
+          "confidence": 0.5771782994270325,
+          "area": 18.199539184570312
         }
       ],
       "safeSearchRatings": {
         "adult": "VERY_UNLIKELY",
         "spoof": "VERY_LIKELY",
         "medical": "VERY_UNLIKELY",
-        "violence": "VERY_UNLIKELY",
+        "violence": "UNLIKELY",
         "racy": "UNLIKELY"
       }
     },
@@ -4388,11 +4863,12 @@
     "channelTitle": "Adhemz",
     "categoryId": "24",
     "publishedAt": "2025-03-04T03:57:36Z",
-    "viewCount": 9439272,
-    "likeCount": 333796,
-    "commentCount": 540,
+    "viewCount": 12336054,
+    "likeCount": 421428,
+    "commentCount": 629,
     "thumbnailUrl": "https://i.ytimg.com/vi/bnWyQ90vBBk/hqdefault.jpg",
-    "ctr": "3.54",
+    "duration": "PT21S",
+    "ctr": "3.42",
     "analysis": {
       "text": "NOKIA\n2016\nD",
       "textEntities": 3,
@@ -4455,7 +4931,7 @@
       "hasFace": true,
       "emotions": [
         {
-          "joy": "UNLIKELY",
+          "joy": "POSSIBLE",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
           "surprise": "VERY_UNLIKELY"
@@ -4531,11 +5007,12 @@
     "channelTitle": "GG_Sheed",
     "categoryId": "28",
     "publishedAt": "2025-02-26T17:13:30Z",
-    "viewCount": 6227407,
-    "likeCount": 426656,
-    "commentCount": 8160,
+    "viewCount": 6590606,
+    "likeCount": 444406,
+    "commentCount": 8672,
     "thumbnailUrl": "https://i.ytimg.com/vi/yuH0XrOyZWs/hqdefault.jpg",
-    "ctr": "6.98",
+    "duration": "PT1M4S",
+    "ctr": "6.87",
     "analysis": {
       "text": "PC Graphics vs Console\nVALAYAY",
       "textEntities": 5,
@@ -4674,11 +5151,12 @@
     "channelTitle": "UFD Tech",
     "categoryId": "28",
     "publishedAt": "2025-02-27T21:00:18Z",
-    "viewCount": 3978963,
-    "likeCount": 266915,
-    "commentCount": 1179,
+    "viewCount": 4153949,
+    "likeCount": 277511,
+    "commentCount": 1219,
     "thumbnailUrl": "https://i.ytimg.com/vi/L6G_YhXDXg0/hqdefault.jpg",
-    "ctr": "6.74",
+    "duration": "PT39S",
+    "ctr": "6.71",
     "analysis": {
       "text": "x\ne. So this week I RUNNING PONG Ing inside mine.\n10 BROWSER TAE\nFinally use for my unclosed f\nFeb 20,2025\ndo with your unclosed browser tabs? I find that they take\nSo this week I figured out how to run pong inside mine.\n+\nㄨ +\nC\nA Not Secure\nMacBook.\nputing mat space to good use\n+\n+\nX\n20 X\nx\n+\n+\nD",
       "textEntities": 73,
@@ -4759,11 +5237,12 @@
     "channelTitle": "Zack D. Films",
     "categoryId": "19",
     "publishedAt": "2025-02-20T15:30:30Z",
-    "viewCount": 18283263,
-    "likeCount": 1621909,
-    "commentCount": 8396,
+    "viewCount": 18566482,
+    "likeCount": 1642863,
+    "commentCount": 8451,
     "thumbnailUrl": "https://i.ytimg.com/vi/lyE1veqMdzI/hqdefault.jpg",
-    "ctr": "8.92",
+    "duration": "PT36S",
+    "ctr": "8.89",
     "analysis": {
       "text": "but she was home",
       "textEntities": 4,
@@ -4857,74 +5336,75 @@
     "categoryName": "Science & Technology"
   },
   {
-    "id": "FKXwBVs_-3k",
-    "title": "The BEST way to use an old laptop 👀",
-    "channelTitle": "Marlipiegos",
-    "categoryId": "24",
-    "publishedAt": "2025-02-25T20:00:09Z",
-    "viewCount": 4327526,
-    "likeCount": 285465,
-    "commentCount": 1322,
-    "thumbnailUrl": "https://i.ytimg.com/vi/FKXwBVs_-3k/hqdefault.jpg",
-    "ctr": "6.63",
+    "id": "rsSlDOId9-4",
+    "title": "Testing the Cheapest Laptop",
+    "channelTitle": "Gohar Khan",
+    "categoryId": "27",
+    "publishedAt": "2025-03-05T20:57:46Z",
+    "viewCount": 1288705,
+    "likeCount": 107048,
+    "commentCount": 816,
+    "thumbnailUrl": "https://i.ytimg.com/vi/rsSlDOId9-4/hqdefault.jpg",
+    "duration": "PT44S",
+    "ctr": "8.37",
     "analysis": {
-      "text": "AND AFTER DISCOVERING THAT IT",
+      "text": "THE CHEAPEST LAPTOP\nBEST\nBUY",
       "textEntities": 5,
-      "textCharCount": 29,
+      "textCharCount": 28,
       "hasText": true,
       "dominantColors": [
         {
           "color": {
-            "red": 12,
-            "green": 26,
-            "blue": 55
+            "red": 62,
+            "green": 121,
+            "blue": 216
           },
-          "score": 0.30197712779045105,
-          "pixelFraction": 0.25181812047958374,
-          "hex": "#0c1a37"
+          "score": 0.31385767459869385,
+          "pixelFraction": 0.0479501336812973,
+          "hex": "#3e79d8"
         },
         {
           "color": {
-            "red": 50,
-            "green": 109,
-            "blue": 224
+            "red": 89,
+            "green": 144,
+            "blue": 225
           },
-          "score": 0.09974823892116547,
-          "pixelFraction": 0.044913291931152344,
-          "hex": "#326de0"
+          "score": 0.0851992815732956,
+          "pixelFraction": 0.015423959121108055,
+          "hex": "#5990e1"
         },
         {
           "color": {
-            "red": 33,
-            "green": 75,
-            "blue": 170
+            "red": 220,
+            "green": 213,
+            "blue": 79
           },
-          "score": 0.07674258202314377,
-          "pixelFraction": 0.03196675330400467,
-          "hex": "#214baa"
+          "score": 0.03628740459680557,
+          "pixelFraction": 0.004954847041517496,
+          "hex": "#dcd54f"
         },
         {
           "color": {
-            "red": 33,
-            "green": 78,
-            "blue": 197
+            "red": 194,
+            "green": 187,
+            "blue": 180
           },
-          "score": 0.054933030158281326,
-          "pixelFraction": 0.020378805696964264,
-          "hex": "#214ec5"
+          "score": 0.024680379778146744,
+          "pixelFraction": 0.03388475999236107,
+          "hex": "#c2bbb4"
         },
         {
           "color": {
-            "red": 25,
-            "green": 44,
-            "blue": 100
+            "red": 8,
+            "green": 15,
+            "blue": 38
           },
-          "score": 0.027095718309283257,
-          "pixelFraction": 0.01502437423914671,
-          "hex": "#192c64"
+          "score": 0.003998038358986378,
+          "pixelFraction": 0.1495244950056076,
+          "hex": "#080f26"
         }
       ],
-      "colorScore": 25,
+      "colorScore": 16,
       "faceCount": 1,
       "hasFace": true,
       "emotions": [
@@ -4932,69 +5412,39 @@
           "joy": "VERY_UNLIKELY",
           "sorrow": "VERY_UNLIKELY",
           "anger": "VERY_UNLIKELY",
-          "surprise": "UNLIKELY"
+          "surprise": "VERY_UNLIKELY"
         }
       ],
       "faceCoverage": {},
-      "objectCount": 10,
+      "objectCount": 4,
       "objects": [
         {
           "name": "Person",
-          "confidence": 0.9013356566429138,
-          "area": 32.56034851074219
-        },
-        {
-          "name": "Hat",
-          "confidence": 0.7638455629348755,
-          "area": 2.0599365234375
-        },
-        {
-          "name": "Person",
-          "confidence": 0.741421639919281,
-          "area": 32.56034851074219
-        },
-        {
-          "name": "Person",
-          "confidence": 0.6319441795349121,
-          "area": 27.206431329250336
+          "confidence": 0.780067503452301,
+          "area": 11.748504638671875
         },
         {
           "name": "Clothing",
-          "confidence": 0.6166280508041382,
-          "area": 16.39271378517151
+          "confidence": 0.6967737078666687,
+          "area": 8.6517333984375
         },
         {
           "name": "Person",
-          "confidence": 0.6126985549926758,
-          "area": 27.206431329250336
+          "confidence": 0.5884486436843872,
+          "area": 11.748504638671875
         },
         {
-          "name": "Hat",
-          "confidence": 0.598152220249176,
-          "area": 2.0599365234375
-        },
-        {
-          "name": "Top",
-          "confidence": 0.5692857503890991,
-          "area": 20.58868408203125
-        },
-        {
-          "name": "Clothing",
-          "confidence": 0.5579297542572021,
-          "area": 20.58868408203125
-        },
-        {
-          "name": "Person",
-          "confidence": 0.5201783776283264,
-          "area": 57.05604553222656
+          "name": "Outerwear",
+          "confidence": 0.5053635835647583,
+          "area": 8.6517333984375
         }
       ],
       "safeSearchRatings": {
-        "adult": "UNLIKELY",
-        "spoof": "UNLIKELY",
-        "medical": "VERY_UNLIKELY",
-        "violence": "UNLIKELY",
-        "racy": "POSSIBLE"
+        "adult": "VERY_UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "UNLIKELY",
+        "violence": "VERY_UNLIKELY",
+        "racy": "UNLIKELY"
       }
     },
     "categoryName": "Science & Technology"
@@ -5005,11 +5455,12 @@
     "channelTitle": "CarterPCs",
     "categoryId": "22",
     "publishedAt": "2025-02-24T20:01:14Z",
-    "viewCount": 3786762,
-    "likeCount": 359020,
-    "commentCount": 2237,
+    "viewCount": 3856101,
+    "likeCount": 364610,
+    "commentCount": 2264,
     "thumbnailUrl": "https://i.ytimg.com/vi/r6Gwcf6HUtA/hqdefault.jpg",
-    "ctr": "9.54",
+    "duration": "PT45S",
+    "ctr": "9.51",
     "analysis": {
       "text": "TO GET KIDS",
       "textEntities": 3,
@@ -5118,11 +5569,12 @@
     "channelTitle": "sanjuuuu_yt_0.7",
     "categoryId": "10",
     "publishedAt": "2025-02-26T02:05:21Z",
-    "viewCount": 10654270,
-    "likeCount": 463650,
-    "commentCount": 1827,
+    "viewCount": 10910996,
+    "likeCount": 473894,
+    "commentCount": 1859,
     "thumbnailUrl": "https://i.ytimg.com/vi/8B9NsxBUmSY/hqdefault.jpg",
-    "ctr": "4.37",
+    "duration": "PT16S",
+    "ctr": "4.36",
     "analysis": {
       "text": "Galaxy $25 Ultra\nG\n°\nJBY",
       "textEntities": 7,

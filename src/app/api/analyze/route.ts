@@ -143,10 +143,38 @@ function getMockAnalysisResult(): AnalysisResult {
       },
     },
     recommendations: [
-      "Increase text size for better readability on mobile",
-      "Consider adding more emotion to the facial expression",
-      "The red color is eye-catching but could be more vibrant",
-      "Try positioning the text in the upper third of the image",
+      {
+        category: 'text',
+        action: 'Increase text size for better readability on mobile',
+        steps: ['Adjust font size for mobile viewing', 'Ensure text contrast is sufficient'],
+        impact: { metric: 'CTR', value: 15, unit: '%' },
+        priority: 1,
+        icon: '🔤'
+      },
+      {
+        category: 'face',
+        action: 'Consider adding more emotion to the facial expression',
+        steps: ['Use more expressive facial poses', 'Capture authentic reactions'],
+        impact: { metric: 'CTR', value: 20, unit: '%' },
+        priority: 2,
+        icon: '😀'
+      },
+      {
+        category: 'color',
+        action: 'The red color is eye-catching but could be more vibrant',
+        steps: ['Increase color saturation', 'Test different shades of red'],
+        impact: { metric: 'CTR', value: 10, unit: '%' },
+        priority: 3,
+        icon: '🎨'
+      },
+      {
+        category: 'composition',
+        action: 'Try positioning the text in the upper third of the image',
+        steps: ['Apply rule of thirds', 'Leave space for text overlay'],
+        impact: { metric: 'CTR', value: 12, unit: '%' },
+        priority: 2,
+        icon: '📐'
+      }
     ],
   };
 } 
