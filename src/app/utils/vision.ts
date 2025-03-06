@@ -320,28 +320,32 @@ function calculateLuminance(r: number, g: number, b: number): number {
 }
 
 function calculateTextScore(detectedText: string[]): number {
-  if (detectedText.length === 0) return 30; // No text is not ideal but not terrible
+  // No text can be fine for certain types of thumbnails
+  if (detectedText.length === 0) return 65; // Increased from 30 to 65 as many successful thumbnails use minimal text
   
-  // Simple scoring based on text amount
+  // Simple scoring based on text amount - successful thumbnails often use minimal text
   const totalText = detectedText.join(' ');
   const textLength = totalText.length;
   
   if (textLength > 100) return 50; // Too much text
-  if (textLength > 50) return 70; // Moderate amount of text
+  if (textLength > 50) return 65; // Moderate amount of text
   if (textLength > 10) return 90; // Good amount of text
-  return 60; // Very little text
+  return 80; // Very little text can be effective
 }
 
 function calculateVisualScore(dominantColors: string[], contrast: string): number {
   // Simple scoring based on colors and contrast
-  let score = 70; // Base score
+  let score = 75; // Base score increased from 70 to 75
   
-  // More colors can be visually appealing
-  score += Math.min(dominantColors.length * 5, 15);
+  // Color scoring - successful thumbnails often use bold, contrasting colors
+  if (dominantColors.length >= 3) score += 10;
+  else if (dominantColors.length === 2) score += 15; // Two colors often work best
+  else score += 5; // Single color can work if it's bold
   
-  // High contrast is good for readability
-  if (contrast === 'High') score += 15;
+  // High contrast is crucial for successful thumbnails
+  if (contrast === 'High') score += 20;
   else if (contrast === 'Medium') score += 10;
+  else score -= 15; // Low contrast is a significant issue
   
   return Math.min(score, 100);
 }
@@ -358,51 +362,54 @@ function calculateFaceScore(faces: FaceData[], labels: string[]): { score: numbe
     
     if (hasArtisticFace) {
       return {
-        score: 65,
-        explanation: "No faces were detected by the AI, but the image appears to contain artistic representations of people or faces. Artistic faces can sometimes be harder for AI to detect but may still engage viewers."
+        score: 75, // Increased from 65 to 75
+        explanation: "No faces were detected by the AI, but the image appears to contain artistic representations of people or faces. Artistic faces can be effective for certain types of content."
       };
     }
     
     return {
-      score: 50,
-      explanation: "No faces were detected in the thumbnail. Thumbnails with human faces tend to perform better as they create a personal connection with viewers."
+      score: 75, // Increased from 50 to 75 as many successful thumbnails don't use faces
+      explanation: "No faces were detected in the thumbnail. While faces can increase engagement, many successful thumbnails use other visual elements to create interest."
     };
   }
 
   // Base score for having faces
-  let score = 70;
+  let score = 75; // Increased from 70 to 75
   let explanation = "";
 
   // Analyze face count
   if (faces.length === 1) {
-    score += 10;
+    score += 15; // Increased from 10 to 15
     explanation = "The thumbnail contains one face, which can create a personal connection with viewers. ";
   } else if (faces.length === 2) {
-    score += 15;
+    score += 10; // Reduced from 15 to 10
     explanation = "The thumbnail contains two faces, suggesting interaction which can increase viewer engagement. ";
   } else if (faces.length === 3) {
-    score += 12;
+    score += 5; // Reduced from 12 to 5
     explanation = "The thumbnail contains three faces, showing group dynamics which can be engaging. ";
   } else {
-    score += 5;
+    score -= 5; // Changed from +5 to -5
     explanation = `The thumbnail contains ${faces.length} faces, which may be too crowded for optimal engagement. `;
   }
 
-  // Analyze face size/prominence
+  // Analyze face size/prominence - larger faces tend to perform better
   const largestFace = faces.reduce((prev, current) => 
     ((current.sizePercent || 0) > (prev.sizePercent || 0)) ? current : prev, faces[0]);
   
   const faceProminencePercent = largestFace.sizePercent || 0;
   
   if (faceProminencePercent > 30) {
-    score += 10;
+    score += 15; // Increased from 10 to 15
     explanation += "The face is prominently featured, which tends to create stronger viewer connection. ";
   } else if (faceProminencePercent > 15) {
     score += 5;
     explanation += "The face is moderately sized, providing some viewer connection. ";
+  } else {
+    score -= 5; // Added penalty for small faces
+    explanation += "The face is relatively small, which may reduce its impact. ";
   }
 
-  // Analyze expressions
+  // Analyze expressions - emotional expressions perform better
   const hasPositiveExpression = faces.some(face => 
     face.expressions.some((exp: string) => ['happy', 'slightly happy', 'surprised', 'slightly surprised'].includes(exp))
   );
@@ -412,11 +419,14 @@ function calculateFaceScore(faces: FaceData[], labels: string[]): { score: numbe
   );
 
   if (hasPositiveExpression) {
-    score += 10;
+    score += 15; // Increased from 10 to 15
     explanation += "Positive facial expressions can increase viewer engagement and click-through rates. ";
   } else if (hasNegativeExpression) {
-    score += 5;
+    score += 10; // Increased from 5 to 10
     explanation += "Strong emotional expressions (even negative ones) can increase curiosity and engagement. ";
+  } else {
+    score -= 10; // Added penalty for neutral expressions
+    explanation += "Neutral expressions tend to perform worse than emotional expressions. ";
   }
 
   // Consider detection confidence
@@ -433,8 +443,16 @@ function calculateFaceScore(faces: FaceData[], labels: string[]): { score: numbe
 }
 
 function calculateCompositionScore(textScore: number, visualScore: number, faceScore: number): number {
-  // Composition is a balance of all elements
-  return Math.round((textScore + visualScore + faceScore) / 3);
+  // Composition is a balance of all elements, but successful thumbnails often excel in one area
+  const baseScore = Math.round((textScore + visualScore + faceScore) / 3);
+  
+  // Bonus for excellence in at least one area
+  const maxScore = Math.max(textScore, visualScore, faceScore);
+  if (maxScore > 85) {
+    return Math.min(baseScore + 10, 100);
+  }
+  
+  return baseScore;
 }
 
 function generateBasicRecommendations(
@@ -447,44 +465,47 @@ function generateBasicRecommendations(
 ): string[] {
   const recommendations: string[] = [];
   
-  // Text recommendations
+  // Text recommendations based on successful YouTube thumbnails
   if (detectedText.length === 0) {
-    recommendations.push('Consider adding some text to your thumbnail to explain the content');
+    recommendations.push('Add 1-3 bold, impactful words that create curiosity or highlight value (e.g., "REVEALED", "SHOCKING", "FREE")');
   } else if (detectedText.join(' ').length > 50) {
-    recommendations.push('Reduce the amount of text for better readability');
+    recommendations.push('Reduce text to 1-3 key words - successful YouTube thumbnails rarely use more than 5-7 words total');
   }
   
   if (textReadability.includes('hard to read')) {
-    recommendations.push('Simplify your text for better readability');
+    recommendations.push('Increase text size and use a bold font with strong outlines or drop shadows for maximum readability');
   }
   
   // Color recommendations
   if (contrast === 'Low') {
-    recommendations.push('Increase the contrast between colors for better visibility');
+    recommendations.push('Use highly contrasting colors like yellow/blue, red/white, or black/neon to make your thumbnail pop in search results');
   }
   
   if (dominantColors.length < 2) {
-    recommendations.push('Add more color variety to make your thumbnail more eye-catching');
+    recommendations.push('Incorporate a bold, attention-grabbing color (red, yellow, or bright blue) that contrasts with your background');
   }
   
   // Face recommendations
   if (faces.length === 0) {
-    recommendations.push('Consider adding a human element (face) to create more engagement');
+    recommendations.push('Consider adding a close-up of a face with an exaggerated emotional expression (surprise, shock, excitement) to create immediate emotional connection');
   } else {
     if (faceProminence.includes('Low')) {
-      recommendations.push('Make the face more prominent for better engagement');
+      recommendations.push('Zoom in on the face to make it take up at least 30% of the thumbnail - close-ups of emotional expressions drive higher CTR');
     }
     
     if (faces[0].expressions.includes('neutral')) {
-      recommendations.push('Use a more expressive facial expression to create emotional connection');
+      recommendations.push('Exaggerate the facial expression to show strong emotion (surprise, excitement, shock) - neutral expressions perform significantly worse');
     }
   }
   
-  // If we don't have many recommendations, add some general ones
-  if (recommendations.length < 3) {
-    recommendations.push('Position important elements in the rule-of-thirds grid points');
-    recommendations.push('Ensure your thumbnail stands out when viewed at small sizes');
+  // General recommendations based on successful thumbnails
+  if (recommendations.length < 4) {
+    recommendations.push('Create a clear focal point by using size contrast (make the main subject 2-3x larger) and positioning it in the right two-thirds of the thumbnail');
+    recommendations.push('Position your main subject slightly off-center using the rule of thirds, with faces typically looking toward your text or into the frame');
+    recommendations.push('Add subtle visual cues that imply movement, transformation, or before/after scenarios to increase curiosity');
+    recommendations.push('Ensure your thumbnail stands out at small sizes by testing how it looks when shrunk down to 20% of its original size');
   }
   
-  return recommendations;
+  // Limit to 6 recommendations
+  return recommendations.slice(0, 6);
 } 

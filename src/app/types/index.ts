@@ -22,17 +22,40 @@ export interface AnalysisResult {
     text: {
       detected: string[];
       readability: string;
+      fontSizes?: number[];
+      fontContrast?: number;
     };
     colors: {
       dominant: string[];
       contrast: string;
+      brightnessFactor?: number;
+      saturationLevel?: number;
     };
     faces: {
       count: number;
       expressions: string[];
       prominence: string;
       explanation: string;
+      eyeContact?: boolean;
+      position?: 'center' | 'left' | 'right' | 'other';
     };
+    layoutType?: 'centered' | 'rule-of-thirds' | 'golden-ratio' | 'other';
+    clutterFactor?: number;
   };
-  recommendations: string[];
+  recommendations: Recommendation[];
+}
+
+export interface Recommendation {
+  category: 'text' | 'visual' | 'face' | 'composition' | 'color';
+  action: string;
+  steps: string[];
+  impact: {
+    metric: string;
+    value: number;
+    unit: '%' | 'x' | 'points';
+  };
+  priority: number;
+  icon?: string;
+  tools?: string[];
+  examples?: string[];
 } 

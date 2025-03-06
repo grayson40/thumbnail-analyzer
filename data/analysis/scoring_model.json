@@ -1,0 +1,276 @@
+{
+  "weights": {
+    "textPresence": 0.2666666666666666,
+    "facePresence": 0.14666666666666672,
+    "faceCoverage": 0.14666666666666672,
+    "colorScore": 0.14666666666666672,
+    "textEntities": 0.14666666666666672,
+    "objectCount": 0.14666666666666672
+  },
+  "thresholds": {
+    "textPresence": true,
+    "facePresence": true,
+    "faceCoverage": 0,
+    "colorScore": 17.272727272727273,
+    "textEntities": 13.909090909090908,
+    "objectCount": 4.545454545454546
+  },
+  "categorySpecific": {
+    "Gaming": {
+      "textPresence": true,
+      "facePresence": false,
+      "faceCoverage": 0,
+      "colorScore": 17.5,
+      "textEntities": 22.5,
+      "objectCount": 0,
+      "commonColors": [
+        {
+          "range": "other",
+          "count": 2,
+          "percentage": 100
+        }
+      ],
+      "commonObjects": []
+    },
+    "Entertainment": {
+      "textPresence": true,
+      "facePresence": true,
+      "faceCoverage": 0,
+      "colorScore": 15.1,
+      "textEntities": 8.3,
+      "objectCount": 5.8,
+      "commonColors": [
+        {
+          "range": "black",
+          "count": 6,
+          "percentage": 60
+        },
+        {
+          "range": "other",
+          "count": 4,
+          "percentage": 40
+        }
+      ],
+      "commonObjects": [
+        {
+          "name": "Person",
+          "count": 33,
+          "percentage": 330
+        },
+        {
+          "name": "Clothing",
+          "count": 15,
+          "percentage": 150
+        },
+        {
+          "name": "Top",
+          "count": 5,
+          "percentage": 50
+        },
+        {
+          "name": "Glasses",
+          "count": 2,
+          "percentage": 20
+        },
+        {
+          "name": "Tie",
+          "count": 1,
+          "percentage": 10
+        }
+      ]
+    },
+    "Music": {
+      "textPresence": false,
+      "facePresence": true,
+      "faceCoverage": 0,
+      "colorScore": 19.6,
+      "textEntities": 0.2,
+      "objectCount": 5.6,
+      "commonColors": [
+        {
+          "range": "black",
+          "count": 5,
+          "percentage": 50
+        },
+        {
+          "range": "other",
+          "count": 4,
+          "percentage": 40
+        },
+        {
+          "range": "red",
+          "count": 1,
+          "percentage": 10
+        }
+      ],
+      "commonObjects": [
+        {
+          "name": "Person",
+          "count": 23,
+          "percentage": 229.99999999999997
+        },
+        {
+          "name": "Clothing",
+          "count": 13,
+          "percentage": 130
+        },
+        {
+          "name": "Top",
+          "count": 5,
+          "percentage": 50
+        },
+        {
+          "name": "Necklace",
+          "count": 2,
+          "percentage": 20
+        },
+        {
+          "name": "Hat",
+          "count": 2,
+          "percentage": 20
+        }
+      ]
+    },
+    "Comedy": {
+      "textPresence": true,
+      "facePresence": true,
+      "faceCoverage": 0,
+      "colorScore": 18.4,
+      "textEntities": 8.3,
+      "objectCount": 4.4,
+      "commonColors": [
+        {
+          "range": "black",
+          "count": 8,
+          "percentage": 80
+        },
+        {
+          "range": "other",
+          "count": 2,
+          "percentage": 20
+        }
+      ],
+      "commonObjects": [
+        {
+          "name": "Person",
+          "count": 27,
+          "percentage": 270
+        },
+        {
+          "name": "Clothing",
+          "count": 9,
+          "percentage": 90
+        },
+        {
+          "name": "Top",
+          "count": 4,
+          "percentage": 40
+        },
+        {
+          "name": "Tie",
+          "count": 1,
+          "percentage": 10
+        },
+        {
+          "name": "Coat",
+          "count": 1,
+          "percentage": 10
+        }
+      ]
+    },
+    "People & Blogs": {
+      "textPresence": false,
+      "facePresence": true,
+      "faceCoverage": 0,
+      "colorScore": 21.5,
+      "textEntities": -1,
+      "objectCount": 6,
+      "commonColors": [
+        {
+          "range": "black",
+          "count": 2,
+          "percentage": 100
+        }
+      ],
+      "commonObjects": [
+        {
+          "name": "Person",
+          "count": 7,
+          "percentage": 350
+        },
+        {
+          "name": "Furniture",
+          "count": 2,
+          "percentage": 100
+        },
+        {
+          "name": "Clothing",
+          "count": 1,
+          "percentage": 50
+        },
+        {
+          "name": "Window blind",
+          "count": 1,
+          "percentage": 50
+        },
+        {
+          "name": "Window",
+          "count": 1,
+          "percentage": 50
+        }
+      ]
+    },
+    "Science & Technology": {
+      "textPresence": true,
+      "facePresence": true,
+      "faceCoverage": 0,
+      "colorScore": 18.2,
+      "textEntities": 10.7,
+      "objectCount": 4.3,
+      "commonColors": [
+        {
+          "range": "black",
+          "count": 5,
+          "percentage": 50
+        },
+        {
+          "range": "other",
+          "count": 4,
+          "percentage": 40
+        },
+        {
+          "range": "blue",
+          "count": 1,
+          "percentage": 10
+        }
+      ],
+      "commonObjects": [
+        {
+          "name": "Person",
+          "count": 20,
+          "percentage": 200
+        },
+        {
+          "name": "Top",
+          "count": 10,
+          "percentage": 100
+        },
+        {
+          "name": "Clothing",
+          "count": 7,
+          "percentage": 70
+        },
+        {
+          "name": "Hat",
+          "count": 2,
+          "percentage": 20
+        },
+        {
+          "name": "Pants",
+          "count": 1,
+          "percentage": 10
+        }
+      ]
+    }
+  }
+}
