@@ -1,6 +1,7 @@
 import { clerkMiddleware } from '@clerk/nextjs/server'
 
-export default clerkMiddleware()
+// Use the correct syntax for clerkMiddleware - passing an empty options object
+export default clerkMiddleware({})
 
 export const config = {
   matcher: [

@@ -80,7 +80,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider 
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      appearance={{
+        baseTheme: undefined,
+        variables: {
+          colorPrimary: '#3b82f6'
+        }
+      }}
+    >
       <html lang="en" className="scroll-smooth">
         <head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
