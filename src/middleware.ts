@@ -1,10 +1,7 @@
 import { clerkMiddleware } from '@clerk/nextjs/server'
 
-// Add a handler function and empty options
-export default clerkMiddleware((auth, req) => {
-  // This is the minimum middleware function - it doesn't do anything special
-  // but it prevents Clerk from trying to use custom domains
-});
+// Simple middleware with no options
+export default clerkMiddleware();
 
 export const config = {
   matcher: [
