@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "init-db": "ts-node src/lib/db/init-db.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
+    "@clerk/nextjs": "^6.12.5",
     "@google-cloud/vision": "^4.3.3",
+    "@neondatabase/serverless": "^0.10.4",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/blob": "^0.27.3",
+    "@vercel/postgres": "^0.10.0",
     "anthropic": "^0.0.0",
     "axios": "^1.8.1",
     "canvas": "^3.1.0",

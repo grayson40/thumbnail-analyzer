@@ -72,7 +72,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-600 mb-6">
-                Have questions, feedback, or need assistance with our YouTube Thumbnail Analyzer? We&apos;d love to hear from you! Fill out the form and we&apos;ll get back to you as soon as possible.
+                Have questions, feedback, or need assistance with our BetterThumbnails.com service? We&apos;d love to hear from you! Fill out the form and we&apos;ll get back to you as soon as possible.
               </p>
               
               <div className="space-y-4 mb-6">

@@ -1,111 +1,257 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { auth } from '@clerk/nextjs/server';
+import { incrementUserDailyAnalysisCount, hasUserExceededDailyLimit, saveThumbnailAnalysis } from '@/lib/db/index';
 import { analyzeImage } from '../../utils/vision';
 import { recalculateScores } from '../../utils/scoring';
 import { generateRecommendations } from '../../utils/anthropic';
 import { AnalysisResult } from '../../types';
+import { put } from '@vercel/blob';
 
-// Flag to use mock data instead of the actual Vision API
-const USE_MOCK_DATA = false; // Changed from true to false to use the actual Vision API
+// Flag to use mock data for development/testing
+const USE_MOCK_DATA = process.env.NODE_ENV === 'development' && process.env.USE_MOCK_DATA === 'true';
 
-export async function POST(request: NextRequest) {
+// Verify Blob token is configured
+if (!process.env.BLOB_READ_WRITE_TOKEN) {
+  console.error('BLOB_READ_WRITE_TOKEN is not configured');
+}
+
+/**
+ * Main function to analyze a thumbnail using our services
+ * This uses the real APIs and algorithms we've built
+ */
+async function analyzeThumbnail(thumbnailUrl: string, thumbnailData?: File): Promise<AnalysisResult> {
   try {
-    // Check if the request is a FormData (file upload) or JSON (URL)
-    const contentType = request.headers.get('content-type') || '';
+    console.log(`Starting analysis for: ${thumbnailUrl}`);
     
+    // Step 1: Convert File to Buffer if needed
     let imageBuffer: Buffer;
-    let imageUrl: string = '';
+    
+    if (thumbnailData) {
+      // Convert File to Buffer
+      const arrayBuffer = await thumbnailData.arrayBuffer();
+      imageBuffer = Buffer.from(arrayBuffer);
+    } else if (thumbnailUrl) {
+      // Fetch the image from URL
+      const response = await fetch(thumbnailUrl);
+      const arrayBuffer = await response.arrayBuffer();
+      imageBuffer = Buffer.from(arrayBuffer);
+    } else {
+      throw new Error('No image data provided');
+    }
+    
+    // Step 2: Run image analysis with Vision API
+    const visionResult = await analyzeImage(imageBuffer);
+    console.log('Vision API analysis complete');
+    
+    // Step 3: Calculate scores based on the vision results
+    const withScores = recalculateScores(visionResult);
+    console.log('Score calculation complete:', withScores.scores);
+    
+    // Step 4: Generate recommendations using Anthropic API
+    const recommendations = await generateRecommendations(withScores);
+    
+    // Add recommendations to the result
+    const finalResult: AnalysisResult = {
+      ...withScores,
+      thumbnail: {
+        ...withScores.thumbnail,
+        url: thumbnailUrl  // Ensure the URL is explicitly set
+      },
+      recommendations: recommendations
+    };
+    
+    console.log('Recommendations generated:', finalResult.recommendations.length);
+    
+    return finalResult;
+  } catch (error) {
+    console.error('Error in analyzeThumbnail:', error);
+    throw error;
+  }
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    // Get the authenticated user
+    const { userId } = await auth();
+    
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'Authentication required', authRequired: true },
+        { status: 401 }
+      );
+    }
+    
+    // Check if user has exceeded their daily limit
+    const hasExceeded = await hasUserExceededDailyLimit(userId);
+    
+    if (hasExceeded) {
+      console.log(`User ${userId} has exceeded daily analysis limit`);
+      return NextResponse.json(
+        { 
+          error: 'Daily analysis limit reached', 
+          limitExceeded: true, 
+          success: false 
+        },
+        { status: 429 }
+      );
+    }
+    
+    // Parse request body - handle both FormData and JSON
+    let url = '';
+    let thumbnailData: File | undefined = undefined;
+    
+    // Check if the request is a FormData or JSON request
+    const contentType = req.headers.get('content-type') || '';
+    console.log('Content type:', contentType);
     
     if (contentType.includes('multipart/form-data')) {
-      // Handle file upload
-      const formData = await request.formData();
-      const file = formData.get('file') as File;
-      
-      if (!file) {
-        return NextResponse.json(
-          { error: 'No file provided' },
-          { status: 400 }
-        );
-      }
-      
-      // Convert file to buffer
-      const arrayBuffer = await file.arrayBuffer();
-      imageBuffer = Buffer.from(arrayBuffer);
-      
-      // For the response, we'll use a data URL
-      const base64 = imageBuffer.toString('base64');
-      const mimeType = file.type;
-      imageUrl = `data:${mimeType};base64,${base64}`;
-    } else {
-      // Handle URL (from YouTube or other source)
-      const { url } = await request.json();
-      
-      if (!url) {
-        return NextResponse.json(
-          { error: 'No URL provided' },
-          { status: 400 }
-        );
-      }
-      
-      // Fetch the image from the URL
       try {
-        const response = await fetch(url);
-        if (!response.ok) {
+        // Check if Blob token is properly configured
+        if (!process.env.BLOB_READ_WRITE_TOKEN) {
+          console.error('Missing BLOB_READ_WRITE_TOKEN in analyze route');
           return NextResponse.json(
-            { error: `Failed to fetch image from URL: ${response.statusText}` },
+            { error: 'Server configuration error: Blob storage not properly configured' },
+            { status: 500 }
+          );
+        }
+        
+        // Handle FormData (file upload)
+        const formData = await req.formData();
+        const file = formData.get('file');
+        
+        if (!file || !(file instanceof File)) {
+          return NextResponse.json(
+            { error: 'No file provided or invalid file' },
             { status: 400 }
           );
         }
         
-        const arrayBuffer = await response.arrayBuffer();
-        imageBuffer = Buffer.from(arrayBuffer);
-        imageUrl = url;
+        console.log('Received file:', file.name, 'size:', file.size);
+        
+        // Upload the file to Vercel Blob
+        const timestamp = Date.now();
+        const fileName = `${userId}-${timestamp}-${file.name}`;
+        
+        console.log('Attempting to upload to Vercel Blob with token present:', !!process.env.BLOB_READ_WRITE_TOKEN);
+        
+        try {
+          const blob = await put(fileName, file, {
+            access: 'public',
+          });
+          
+          // Set the URL to the uploaded blob URL
+          url = blob.url;
+          thumbnailData = file;
+          
+          console.log(`File uploaded to ${url}`);
+        } catch (blobError: any) {
+          console.error('Vercel Blob upload error:', blobError);
+          return NextResponse.json(
+            { error: `Blob storage error: ${blobError.message}`, success: false },
+            { status: 500 }
+          );
+        }
       } catch (error) {
-        console.error('Error fetching image from URL:', error);
+        console.error('Error processing FormData:', error);
         return NextResponse.json(
-          { error: `Failed to fetch image from URL: ${error instanceof Error ? error.message : 'Unknown error'}` },
+          { error: 'Failed to process uploaded file' },
+          { status: 400 }
+        );
+      }
+    } else {
+      // Handle JSON (URL or YouTube ID)
+      try {
+        const body = await req.json();
+        url = body.url;
+        
+        if (!url) {
+          return NextResponse.json(
+            { error: 'Thumbnail URL is required' },
+            { status: 400 }
+          );
+        }
+        
+        console.log('Received URL:', url);
+        
+        // Check if this is a Blob URL - if so, we don't need to re-upload
+        if (url.includes('blob.vercel-storage.com')) {
+          console.log('URL is already a Vercel Blob URL, skipping upload');
+        }
+      } catch (error) {
+        console.error('Error parsing JSON body:', error);
+        return NextResponse.json(
+          { error: 'Invalid JSON request body' },
           { status: 400 }
         );
       }
     }
     
-    let analysisResult: AnalysisResult;
+    // Analyze the thumbnail
+    console.log(`Analyzing thumbnail for user ${userId}:`, url);
+    
+    // Determine whether to use mock data or real analysis
+    let analysis: AnalysisResult;
     
     if (USE_MOCK_DATA) {
-      // Use mock data for testing
-      analysisResult = getMockAnalysisResult();
+      console.log('Using mock data for analysis (development mode)');
+      analysis = getMockAnalysisResult();
+      
+      // Make sure the thumbnail URL is set correctly in the result
+      if (analysis && analysis.thumbnail) {
+        analysis.thumbnail.url = url;
+      }
     } else {
+      // Use our real analysis services
+      console.log('Using production analysis services');
       try {
-        // Analyze the image using Google Cloud Vision API
-        analysisResult = await analyzeImage(imageBuffer);
+        analysis = await analyzeThumbnail(url, thumbnailData);
+        
+        // Double-check that the URL is set correctly
+        if (analysis && analysis.thumbnail) {
+          analysis.thumbnail.url = url;
+        }
       } catch (error) {
-        console.error('Error analyzing image with Vision API:', error);
+        console.error('Analysis failed:', error);
         return NextResponse.json(
-          { error: `Failed to analyze image with Vision API: ${error instanceof Error ? error.message : 'Unknown error'}` },
+          { error: 'Analysis failed. Please try again with a different image.', success: false },
           { status: 500 }
         );
       }
     }
     
-    // Add the image URL to the result
-    analysisResult.thumbnail.url = imageUrl;
+    // Increment the user's daily analysis count
+    const success = await incrementUserDailyAnalysisCount(userId);
     
-    // Recalculate scores using our improved scoring algorithm
-    analysisResult = recalculateScores(analysisResult);
-    
-    try {
-      // Generate recommendations using Anthropic (or fallback to basic recommendations)
-      const recommendations = await generateRecommendations(analysisResult);
-      analysisResult.recommendations = recommendations;
-    } catch (error) {
-      console.error('Error generating recommendations:', error);
-      // Continue with the analysis result even if recommendations fail
+    if (!success) {
+      console.warn(`Failed to increment analysis count for user ${userId}`);
+    } else {
+      console.log(`Successfully incremented analysis count for user ${userId}`);
     }
     
-    return NextResponse.json(analysisResult);
-  } catch (error) {
-    console.error('Error analyzing image:', error);
+    // Save the analysis result to the database
+    console.log(`Saving analysis with thumbnail URL: ${analysis.thumbnail.url}`);
+    const analysisId = await saveThumbnailAnalysis(userId, analysis);
+    
+    if (!analysisId) {
+      console.warn(`Failed to save analysis result for user ${userId}`);
+    } else {
+      console.log(`Successfully saved analysis result for user ${userId}, ID: ${analysisId}`);
+    }
+    
+    return NextResponse.json({
+      ...analysis,
+      isFreeTier: true,
+      analysisCompleted: true,
+      success: true,
+      analysisId // Include the ID in the response so we can use it for loading results later
+    });
+  } catch (error: any) {
+    console.error('Error processing analysis request:', error);
     return NextResponse.json(
-      { error: `Failed to analyze image: ${error instanceof Error ? error.message : 'Unknown error'}` },
+      { 
+        error: error.message || 'Failed to analyze thumbnail',
+        success: false 
+      },
       { status: 500 }
     );
   }

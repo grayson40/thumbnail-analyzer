@@ -11,7 +11,7 @@
 
 const dotenv = require('dotenv');
 // Load environment variables from .env.local as well
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env' });
 dotenv.config();
 
 const { google } = require('googleapis');

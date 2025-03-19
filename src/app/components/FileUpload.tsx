@@ -12,35 +12,30 @@ export default function FileUpload({ onFileSelect }: FileUploadProps) {
   const [preview, setPreview] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadSuccess, setUploadSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const onDrop = useCallback((acceptedFiles: File[]) => {
+  const onDrop = useCallback(async (acceptedFiles: File[]) => {
     if (acceptedFiles && acceptedFiles.length > 0) {
       const file = acceptedFiles[0];
       
       // Only accept image files
       if (!file.type.startsWith('image/')) {
-        alert('Please upload an image file');
+        setError('Please upload an image file');
         return;
       }
       
-      // Simulate upload process
-      setIsUploading(true);
+      // Create a local preview
+      const objectUrl = URL.createObjectURL(file);
+      setPreview(objectUrl);
       
+      // Show success state briefly
+      setUploadSuccess(true);
       setTimeout(() => {
-        // Create a preview
-        const objectUrl = URL.createObjectURL(file);
-        setPreview(objectUrl);
-        setIsUploading(false);
-        setUploadSuccess(true);
-        
-        // Reset success state after animation
-        setTimeout(() => {
-          setUploadSuccess(false);
-        }, 2000);
-        
-        // Pass the file to the parent component
-        onFileSelect(file);
-      }, 800);
+        setUploadSuccess(false);
+      }, 2000);
+      
+      // Pass the file to the parent component
+      onFileSelect(file);
     }
   }, [onFileSelect]);
 
@@ -81,7 +76,7 @@ export default function FileUpload({ onFileSelect }: FileUploadProps) {
         {isUploading ? (
           <div className="flex flex-col items-center animate-pulse">
             <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mb-4"></div>
-            <p className="text-gray-600 font-medium">Uploading...</p>
+            <p className="text-gray-600 font-medium">Processing...</p>
           </div>
         ) : preview ? (
           <div className={`flex flex-col items-center ${uploadSuccess ? 'animate-scale' : 'animate-fadeIn'}`}>
@@ -92,11 +87,19 @@ export default function FileUpload({ onFileSelect }: FileUploadProps) {
                 fill
                 style={{ objectFit: 'contain' }}
                 className="rounded shadow-md transition-transform group-hover:scale-105"
+                unoptimized={true}
               />
               {uploadSuccess && (
                 <div className="absolute top-2 right-2 bg-green-500 text-white p-1 rounded-full animate-fadeIn">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              )}
+              {error && (
+                <div className="absolute top-2 right-2 bg-red-500 text-white p-1 rounded-full animate-fadeIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                   </svg>
                 </div>
               )}
@@ -107,6 +110,9 @@ export default function FileUpload({ onFileSelect }: FileUploadProps) {
               </svg>
               <p className="text-sm text-gray-600 font-medium">Click or drag to replace</p>
             </div>
+            {error && (
+              <p className="mt-2 text-sm text-red-600">{error}</p>
+            )}
           </div>
         ) : (
           <div className="flex flex-col items-center py-6">

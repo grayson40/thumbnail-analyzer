@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             
             <h2 className="text-gray-800">1. Introduction</h2>
             <p className="text-gray-800">
-              This Privacy Policy explains how YouTube Thumbnail Analyzer collects, uses, and protects your information when you use our service. We are committed to ensuring the privacy and security of your data.
+              This Privacy Policy explains how BetterThumbnails.com collects, uses, and protects your information when you use our service. We are committed to ensuring the privacy and security of your data.
             </p>
             
             <h2 className="text-gray-800">2. Information We Collect</h2>

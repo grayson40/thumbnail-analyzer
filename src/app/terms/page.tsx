@@ -15,12 +15,12 @@ export default function TermsOfService() {
             
             <h2 className="text-gray-800">1. Acceptance of Terms</h2>
             <p className="text-gray-800">
-              By accessing or using the YouTube Thumbnail Analyzer service, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
+              By accessing or using the BetterThumbnails.com service, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
             </p>
             
             <h2 className="text-gray-800">2. Description of Service</h2>
             <p className="text-gray-800">
-              YouTube Thumbnail Analyzer provides AI-powered analysis of YouTube thumbnails to help content creators improve their thumbnail effectiveness. The service analyzes various aspects including text, colors, faces, and composition.
+              BetterThumbnails.com provides AI-powered analysis of YouTube thumbnails to help content creators improve their thumbnail effectiveness. The service analyzes various aspects including text, colors, faces, and composition.
             </p>
             
             <h2 className="text-gray-800">3. User Responsibilities</h2>

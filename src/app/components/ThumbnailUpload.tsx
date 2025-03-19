@@ -2,13 +2,19 @@
 
 import React, { useState, useRef, ChangeEvent, useEffect } from 'react';
 import { ThumbnailData } from '../types';
+import { useAuth } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
+import { getUserDailyAnalysisCount } from '@/lib/db/index';
+import AuthModal from './AuthModal';
+import FileUpload from './FileUpload';
 
 interface ThumbnailUploadProps {
   onSubmit: (data: ThumbnailData) => void;
   isLoading?: boolean;
+  buttonText?: string;
 }
 
-export default function ThumbnailUpload({ onSubmit, isLoading = false }: ThumbnailUploadProps) {
+export default function ThumbnailUpload({ onSubmit, isLoading = false, buttonText = "Analyze Thumbnail" }: ThumbnailUploadProps) {
   const [uploadMethod, setUploadMethod] = useState<'file' | 'url' | 'youtube'>('file');
   const [file, setFile] = useState<File | null>(null);
   const [url, setUrl] = useState('');
@@ -16,9 +22,149 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [dragActive, setDragActive] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [analysisWarning, setAnalysisWarning] = useState<string | null>(null);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [pendingData, setPendingData] = useState<ThumbnailData | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const urlInputRef = useRef<HTMLInputElement>(null);
   const youtubeInputRef = useRef<HTMLInputElement>(null);
+  const { isLoaded, isSignedIn, userId } = useAuth();
+  const router = useRouter();
+
+  // Check if user has already used their daily analysis
+  useEffect(() => {
+    if (isLoaded && isSignedIn && userId) {
+      const checkAnalysisCount = async () => {
+        try {
+          const count = await getUserDailyAnalysisCount(userId);
+          if (count >= 1) {
+            setAnalysisWarning('You have already used your 1 free analysis for today.');
+          } else {
+            setAnalysisWarning(null);
+          }
+        } catch (error) {
+          console.error('Error checking analysis count:', error);
+        }
+      };
+      
+      checkAnalysisCount();
+    }
+  }, [isLoaded, isSignedIn, userId]);
+
+  // Store pending data in sessionStorage to persist across page refreshes
+  useEffect(() => {
+    // Store pending data in sessionStorage if available
+    if (pendingData) {
+      try {
+        // We can't directly store File objects, so we'll only store URL data
+        const storableData: Record<string, string> = {};
+        if (pendingData.url) storableData.url = pendingData.url;
+        if (pendingData.youtubeId) storableData.youtubeId = pendingData.youtubeId;
+        if (pendingData.previewUrl) storableData.previewUrl = pendingData.previewUrl;
+        
+        sessionStorage.setItem('pendingAnalysisData', JSON.stringify(storableData));
+        console.log('Stored pending data in sessionStorage:', storableData);
+      } catch (error) {
+        console.error('Error storing pending data:', error);
+      }
+    }
+  }, [pendingData]);
+
+  // Load pending data from sessionStorage on initial render
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !pendingData) {
+      try {
+        const storedData = sessionStorage.getItem('pendingAnalysisData');
+        if (storedData) {
+          const parsedData = JSON.parse(storedData);
+          console.log('Retrieved pending data from sessionStorage:', parsedData);
+          
+          if (Object.keys(parsedData).length > 0) {
+            setPendingData(parsedData);
+          }
+        }
+      } catch (error) {
+        console.error('Error retrieving pending data:', error);
+      }
+    }
+  }, []);
+
+  // Submit analysis when user signs in
+  useEffect(() => {
+    if (isLoaded && isSignedIn && pendingData) {
+      console.log('User is signed in and has pending data, submitting analysis');
+      
+      // Close the auth modal
+      setShowAuthModal(false);
+      
+      // Clear the stored pending data
+      sessionStorage.removeItem('pendingAnalysisData');
+      
+      // Submit the analysis data
+      onSubmit(pendingData);
+      setPendingData(null);
+      
+      // Show a welcome toast for new sign-ins
+      const isNewSignIn = sessionStorage.getItem('isNewSignIn') === 'true';
+      if (isNewSignIn) {
+        // Clear the flag
+        sessionStorage.removeItem('isNewSignIn');
+        // We'll let the parent component handle the welcome toast
+      }
+    }
+  }, [isLoaded, isSignedIn, pendingData, onSubmit]);
+
+  // Listen for Clerk auth state changes via URL hash
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleHashChange = () => {
+        // Check if the hash contains Clerk's status indicator
+        const hash = window.location.hash;
+        console.log('Hash changed:', hash);
+        
+        if (hash.includes('__clerk_status=')) {
+          // Set flag to show welcome message for new sign-in
+          sessionStorage.setItem('isNewSignIn', 'true');
+          
+          // Clean up URL by removing the hash
+          history.replaceState(null, '', window.location.pathname);
+          
+          // Force a check for auth status after a small delay
+          // This ensures Clerk has had time to update the auth state
+          setTimeout(() => {
+            console.log('Checking auth status after hash change, isSignedIn:', isSignedIn);
+            if (isSignedIn && pendingData) {
+              console.log('User authenticated, submitting pending analysis:', pendingData);
+              setShowAuthModal(false);
+              onSubmit(pendingData);
+              setPendingData(null);
+            } else if (isSignedIn) {
+              console.log('User authenticated but no pending data');
+              setShowAuthModal(false);
+            } else {
+              console.log('Auth state changed but user not signed in yet, will check again in 1 second');
+              // Try again after a delay to give Clerk more time
+              setTimeout(() => {
+                if (isSignedIn && pendingData) {
+                  console.log('User authenticated on second check, submitting analysis');
+                  setShowAuthModal(false);
+                  onSubmit(pendingData);
+                  setPendingData(null);
+                }
+              }, 1000);
+            }
+          }, 100);
+        }
+      };
+      
+      // Check on initial load
+      handleHashChange();
+      
+      // Add listener for hash changes
+      window.addEventListener('hashchange', handleHashChange);
+      return () => window.removeEventListener('hashchange', handleHashChange);
+    }
+  }, [isSignedIn, pendingData, onSubmit]);
 
   // Focus the appropriate input when switching methods
   useEffect(() => {
@@ -44,27 +190,17 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
     resetForm();
   };
 
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      const selectedFile = e.target.files[0];
-      
-      // Check file size (5MB limit)
-      if (selectedFile.size > 5 * 1024 * 1024) {
-        setError('File size exceeds 5MB limit');
-        return;
-      }
-      
-      setFile(selectedFile);
-      setError(null);
-      
-      // Create preview URL
-      const objectUrl = URL.createObjectURL(selectedFile);
-      setPreviewUrl(objectUrl);
-      
-      // Reset other fields
-      setUrl('');
-      setYoutubeId('');
-    }
+  const handleFileSelect = (selectedFile: File) => {
+    setFile(selectedFile);
+    setError(null);
+    
+    // Create a local preview
+    const objectUrl = URL.createObjectURL(selectedFile);
+    setPreviewUrl(objectUrl);
+    
+    // Reset other fields
+    setUrl('');
+    setYoutubeId('');
   };
 
   const handleDrag = (e: React.DragEvent) => {
@@ -98,16 +234,7 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
         return;
       }
       
-      setFile(droppedFile);
-      setError(null);
-      
-      // Create preview URL
-      const objectUrl = URL.createObjectURL(droppedFile);
-      setPreviewUrl(objectUrl);
-      
-      // Reset other fields
-      setUrl('');
-      setYoutubeId('');
+      handleFileSelect(droppedFile);
     }
   };
 
@@ -144,32 +271,209 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
     setUrl('');
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const data: ThumbnailData = {};
-    
-    if (uploadMethod === 'file' && file) {
-      data.file = file;
-      data.previewUrl = previewUrl || undefined;
-    } else if (uploadMethod === 'url' && url) {
-      data.url = url;
-    } else if (uploadMethod === 'youtube' && youtubeId) {
-      if (!validateYoutubeId(youtubeId)) {
-        setError('Please enter a valid YouTube video ID');
-        return;
+  // Add validateUrl function near the other validation functions
+  const validateUrl = (url: string): boolean => {
+    try {
+      new URL(url);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+
+  // Add this helper function to handle analysis submission with proper error handling
+  const submitAnalysis = async (data: ThumbnailData) => {
+    try {
+      // Prepare the request based on the data we have
+      let response;
+      
+      if (data.file) {
+        // If we have a file, send it as form data
+        const formData = new FormData();
+        formData.append('file', data.file);
+        
+        response = await fetch('/api/analyze', {
+          method: 'POST',
+          body: formData,
+        });
+      } else if (data.url) {
+        // If we have a URL, send it as JSON
+        response = await fetch('/api/analyze', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ url: data.url }),
+        });
+      } else if (data.youtubeId) {
+        // If we have a YouTube ID, construct a URL and send as JSON
+        const youtubeUrl = `https://img.youtube.com/vi/${data.youtubeId}/maxresdefault.jpg`;
+        response = await fetch('/api/analyze', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ url: youtubeUrl }),
+        });
+      } else {
+        throw new Error('No valid data for analysis');
       }
-      data.youtubeId = youtubeId;
-      data.previewUrl = previewUrl || undefined;
+      
+      if (!response) {
+        throw new Error('Failed to send analysis request');
+      }
+      
+      const result = await response.json();
+      
+      // Handle the response
+      if (response.ok) {
+        return { success: true, data: result };
+      } else {
+        // Handle specific error types
+        if (result.limitExceeded) {
+          return { 
+            success: false, 
+            error: 'Daily analysis limit reached. Please try again tomorrow.',
+            limitExceeded: true 
+          };
+        } else if (result.authRequired) {
+          return { 
+            success: false, 
+            error: 'Authentication required',
+            authRequired: true 
+          };
+        } else {
+          return { 
+            success: false, 
+            error: result.error || 'Analysis failed' 
+          };
+        }
+      }
+    } catch (error: any) {
+      console.error('Error submitting analysis:', error);
+      return { 
+        success: false, 
+        error: error.message || 'Failed to analyze thumbnail' 
+      };
+    }
+  };
+
+  // Update the handleSubmit function to use the new helper
+  const handleSubmit = async () => {
+    console.log('ThumbnailUpload - handleSubmit called with method:', uploadMethod);
+    
+    // Prepare data based on upload method
+    let data: ThumbnailData = {};
+    let isValid = true;
+    let validationError = '';
+
+    if (uploadMethod === 'file' && file) {
+      console.log('ThumbnailUpload - Submitting file:', file.name);
+      data = { file, previewUrl: previewUrl || undefined };
+    } else if (uploadMethod === 'url' && url) {
+      console.log('ThumbnailUpload - Submitting URL:', url);
+      data = { url, previewUrl: previewUrl || undefined };
+    } else if (uploadMethod === 'youtube' && youtubeId) {
+      console.log('ThumbnailUpload - Submitting YouTube ID:', youtubeId);
+      
+      // Basic YouTube ID validation
+      const youtubeIdRegex = /^[a-zA-Z0-9_-]{11}$/;
+      if (youtubeIdRegex.test(youtubeId)) {
+        data = { youtubeId, previewUrl: previewUrl || undefined };
+      } else {
+        isValid = false;
+        validationError = 'Please enter a valid YouTube video ID (11 characters)';
+      }
     } else {
-      // No valid data to submit
-      setError('Please provide a thumbnail to analyze');
+      isValid = false;
+      validationError = 'Please select a thumbnail to analyze';
+    }
+
+    if (!isValid) {
+      setError(validationError);
+      if (typeof window !== 'undefined') {
+        const errorElement = document.getElementById('thumbnail-error');
+        if (errorElement) {
+          errorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+      return;
+    }
+
+    setError(null);
+    
+    // Check if user is authenticated
+    if (!isSignedIn) {
+      // Store pending data and show auth modal
+      console.log('User not signed in - storing data and showing auth modal');
+      
+      // Store data in sessionStorage for persistence
+      try {
+        const storableData: Record<string, string> = {};
+        if (data.url) storableData.url = data.url;
+        if (data.youtubeId) storableData.youtubeId = data.youtubeId;
+        if (data.previewUrl) storableData.previewUrl = data.previewUrl;
+        storableData.uploadMethod = uploadMethod;
+        
+        sessionStorage.setItem('pendingAnalysisData', JSON.stringify(storableData));
+      } catch (error) {
+        console.error('Error storing pending data:', error);
+      }
+      
+      setPendingData(data);
+      setShowAuthModal(true);
       return;
     }
     
-    setError(null);
+    // If the user is already signed in, submit directly
+    console.log('User signed in - submitting analysis directly');
     onSubmit(data);
   };
+
+  // Check for pending uploads on initial render
+  useEffect(() => {
+    // This will leverage the session storage from the Home component
+    // The data will be processed there based on authentication state
+    try {
+      const storedData = sessionStorage.getItem('pendingAnalysisData');
+      if (storedData) {
+        const parsedData = JSON.parse(storedData);
+        console.log('ThumbnailUpload - Found stored data:', parsedData);
+        
+        if (parsedData.uploadMethod) {
+          console.log('ThumbnailUpload - Setting upload method to:', parsedData.uploadMethod);
+          setUploadMethod(parsedData.uploadMethod);
+          
+          if (parsedData.url) {
+            setUrl(parsedData.url);
+            if (validateUrl(parsedData.url)) {
+              // Set preview directly if we already have it
+              if (parsedData.previewUrl) {
+                setPreviewUrl(parsedData.previewUrl);
+              } else {
+                // Otherwise try to generate a preview
+                setPreviewUrl(parsedData.url);
+              }
+            }
+          }
+          
+          if (parsedData.youtubeId) {
+            setYoutubeId(parsedData.youtubeId);
+            
+            if (parsedData.previewUrl) {
+              setPreviewUrl(parsedData.previewUrl);
+            } else {
+              // Generate YouTube preview URL
+              const youtubePreviewUrl = `https://img.youtube.com/vi/${parsedData.youtubeId}/hqdefault.jpg`;
+              setPreviewUrl(youtubePreviewUrl);
+            }
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Error retrieving pending data in ThumbnailUpload:', error);
+    }
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row">
@@ -228,38 +532,7 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
 
         {/* File Upload */}
         {uploadMethod === 'file' && (
-          <div 
-            className={`border-2 border-dashed rounded-lg p-4 transition-colors ${
-              dragActive ? 'border-primary bg-primary/5' : 'border-gray-300 hover:border-primary/50'
-            }`}
-            onDragEnter={handleDrag}
-            onDragLeave={handleDrag}
-            onDragOver={handleDrag}
-            onDrop={handleDrop}
-          >
-            <div className="flex flex-col items-center justify-center py-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-              </svg>
-              <p className="text-sm text-gray-600 mb-1">Drag & drop your thumbnail here</p>
-              <p className="text-xs text-gray-500 mb-3">or</p>
-              <button
-                type="button"
-                className="bg-primary/10 hover:bg-primary/20 text-primary font-medium py-2 px-4 rounded-lg text-sm transition-colors"
-                onClick={() => fileInputRef.current?.click()}
-              >
-                Browse Files
-              </button>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                className="hidden"
-                onChange={handleFileChange}
-              />
-              <p className="text-xs text-gray-500 mt-2">Max file size: 5MB</p>
-            </div>
-          </div>
+          <FileUpload onFileSelect={handleFileSelect} />
         )}
 
         {/* URL Input */}
@@ -339,6 +612,16 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
           )}
         </div>
 
+        {/* Analysis Warning */}
+        {analysisWarning && isSignedIn && (
+          <div className="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-700 text-sm flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-amber-500" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v4a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+            </svg>
+            {analysisWarning}
+          </div>
+        )}
+
         {/* Analyze Button - Always visible */}
         <button 
           className={`w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center ${
@@ -360,11 +643,25 @@ export default function ThumbnailUpload({ onSubmit, isLoading = false }: Thumbna
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clipRule="evenodd" />
               </svg>
-              Analyze Thumbnail
+              {buttonText}
             </>
           )}
         </button>
       </div>
+
+      {/* Auth Modal */}
+      {showAuthModal && (
+        <AuthModal
+          isOpen={showAuthModal}
+          onClose={() => setShowAuthModal(false)}
+          defaultView="signUp"
+          onAuthSuccess={() => {
+            console.log('Auth success in ThumbnailUpload, proceeding with submission');
+            setShowAuthModal(false);
+            // The Home component will handle processing the analysis after auth
+          }}
+        />
+      )}
     </div>
   );
 } 
