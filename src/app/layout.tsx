@@ -88,6 +88,7 @@ export default function RootLayout({
           colorPrimary: '#3b82f6'
         }
       }}
+      clerkJSUrl={process.env.NEXT_PUBLIC_CLERK_JS_URL || "https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"}
     >
       <html lang="en" className="scroll-smooth">
         <head>

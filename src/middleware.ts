@@ -1,7 +1,10 @@
 import { clerkMiddleware } from '@clerk/nextjs/server'
 
-// Use the correct syntax for clerkMiddleware - passing an empty options object
-export default clerkMiddleware({})
+// Add a handler function and empty options
+export default clerkMiddleware((auth, req) => {
+  // This is the minimum middleware function - it doesn't do anything special
+  // but it prevents Clerk from trying to use custom domains
+});
 
 export const config = {
   matcher: [
